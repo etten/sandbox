@@ -17,3 +17,22 @@ session:
 
 services:
 	router: App\RouterFactory::createRouter
+
+extensions:
+	console: Kdyby\Console\DI\ConsoleExtension
+	events: Kdyby\Events\DI\EventsExtension
+	annotations: Kdyby\Annotations\DI\AnnotationsExtension
+	doctrine: Kdyby\Doctrine\DI\OrmExtension
+
+
+console:
+    url: https://hranicka.cz
+
+
+doctrine:
+    user: root
+    password:
+    dbname: nette-sandbox
+    defaultRepositoryClassName: Kdyby\Doctrine\EntityRepository
+    metadata:
+    	App: %appDir%
