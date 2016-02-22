@@ -11,12 +11,18 @@ application:
 		*: App\*Module\Presenters\*Presenter
 
 
+nette:
+	container:
+		debugger: yes
+
+
 session:
 	expiration: 14 days
 
 
 services:
 	router: App\RouterFactory::createRouter
+
 
 extensions:
 	console: Kdyby\Console\DI\ConsoleExtension
