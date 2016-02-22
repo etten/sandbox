@@ -1,6 +1,6 @@
 <?php
 
-namespace Hranicka\NetteSandbox;
+namespace Etten\Sandbox;
 
 class Foo
 {

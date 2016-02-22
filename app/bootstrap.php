@@ -1,21 +1,18 @@
 <?php
 
+namespace App;
+
+use Etten;
+
 require __DIR__ . '/../vendor/autoload.php';
 
-$configurator = new Nette\Configurator;
+$app = new Etten\App\App(__DIR__ . '/..');
 
-//$configurator->setDebugMode('23.75.345.200'); // enable for your remote IP
-$configurator->enableDebugger(__DIR__ . '/../log');
+$app->addBootstrapFile(__DIR__ . '/config/bootstrap.neon');
 
-$configurator->setTempDirectory(__DIR__ . '/../temp');
+$app->addConfigFile(__DIR__ . '/config/config.neon');
+$app->addConfigFile(__DIR__ . '/config/config.local.neon');
 
-$configurator->createRobotLoader()
-	->addDirectory(__DIR__)
-	->register();
+$app->addExtension(new Etten\App\Extensions\SystemSetup());
 
-$configurator->addConfig(__DIR__ . '/config/config.neon');
-$configurator->addConfig(__DIR__ . '/config/config.local.neon');
-
-$container = $configurator->createContainer();
-
-return $container;
+return $app;

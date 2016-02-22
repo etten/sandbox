@@ -1,0 +1,12 @@
+parameters:
+	appDir: %rootDir%/app
+	logDir: %rootDir%/log
+	tempDir: %rootDir%/temp
+	wwwDir: %rootDir%/www
+
+configurator:
+	debug:
+		- 192.168.1.1 # Your external IP
+
+	load:
+		- %appDir%
