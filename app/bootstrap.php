@@ -14,5 +14,6 @@ $app->addConfigFile(__DIR__ . '/config/config.neon');
 $app->addConfigFile(__DIR__ . '/config/config.local.neon', 'local');
 
 $app->addExtension(new Etten\App\Extensions\SystemSetup());
+$app->addExtension(new Etten\App\Extensions\PhpStormSymfonyConsoleFix());
 
 return $app;
