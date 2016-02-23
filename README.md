@@ -3,10 +3,11 @@
 Sandbox is a pre-packaged and pre-configured Nette Framework application
 that you can use as the skeleton for your new applications.
 
+It is based on official [nette/sandbox](https://github.com/nette/sandbox).
+
 [Nette](https://nette.org) is a popular tool for PHP web development.
 It is designed to be the most usable and friendliest as possible. It focuses
 on security and performance and is definitely one of the safest PHP frameworks.
-
 
 ## Installing
 
@@ -23,3 +24,11 @@ then visit `http://localhost:8888` in your browser.
 It is CRITICAL that all files and directories except `www` are NOT accessible
 directly via a web browser! Necessary file for Apache is included (`.htaccess`).
 Make sure that is handled properly by your server!
+
+## Included packages
+
+* [Etten\App](https://github.com/etten/app)
+* [Nette framework](https://nette.org)
+* [Kdyby\Console](https://github.com/Kdyby/Console)
+* [Kdyby\Events](https://github.com/Kdyby/Events)
+* [Kdyby\Doctrine](https://github.com/Kdyby/Doctrine)
