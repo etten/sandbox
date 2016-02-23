@@ -1,9 +1,9 @@
 # Etten\Sandbox
 
+Based on official [nette/sandbox](https://github.com/nette/sandbox).
+
 Sandbox is a pre-packaged and pre-configured Nette Framework application
 that you can use as the skeleton for your new applications.
-
-It is based on official [nette/sandbox](https://github.com/nette/sandbox).
 
 [Nette](https://nette.org) is a popular tool for PHP web development.
 It is designed to be the most usable and friendliest as possible. It focuses
@@ -11,16 +11,24 @@ on security and performance and is definitely one of the safest PHP frameworks.
 
 ## Installing
 
-The best way to install Sandbox is using Composer. If you don't have Composer yet, download
+1. The best way to install Sandbox is using Composer. If you don't have Composer yet, download
 it and install following [the instructions](https://getcomposer.org/doc/00-intro.md). Then use command:
 
-`$ composer create-project etten/sandbox my-app`
+	`$ composer create-project etten/sandbox my-app`
 
-Make directories `temp`, `log` + `tests/temp`, `tests/log` writable.
-Navigate your browser to the `www` directory and you will see a welcome page.
+2. Make directories `temp`, `log` + `tests/temp`, `tests/log` writable.
 
+3. Create local configuration files and set up as you need (eg. database credentials).
+
+	`$ cp app/config/config.local.neon.dist app/config/config.local.neon`
+
+	`$ cp tests/config.local.neon.dist tests/config.local.neon`
+
+4. Navigate your browser to the `www` directory and you will see a welcome page.
 PHP 5.4 allows you run `php -S localhost:8888 -t www` to start the web server and
 then visit `http://localhost:8888` in your browser.
+
+## Security warning
 
 It is CRITICAL that **all** files and directories **except `www`** are NOT accessible
 directly via a web browser! Necessary file for Apache is included (`.htaccess`).
