@@ -41,3 +41,6 @@ script:
 
   # Run PHPUnit
   - vendor/bin/phpunit --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests
+
+  # Run Migrations
+  - php -f tests/index.php migrations:reset
