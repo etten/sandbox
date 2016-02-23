@@ -36,9 +36,9 @@ console:
 
 
 doctrine:
-    user: root
+    user:
     password:
-    dbname: nette-sandbox
+    dbname:
     defaultRepositoryClassName: Kdyby\Doctrine\EntityRepository
     metadata:
     	App: %appDir%
