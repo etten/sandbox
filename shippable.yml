@@ -8,11 +8,18 @@ env:
     - TESTING=true
 
 before_install:
+  # Run daemons
+  - service mysql start
+
   # Check environment
   - php -v
+  - mysql -V
   - composer -V
 
 install:
+  # Database
+  - mysql -e 'create database test;'
+
   # Composer
   - composer install --no-interaction --prefer-dist
 
@@ -23,6 +30,9 @@ before_script:
 
   # Set file/directory permissions
   - chmod -R 777 tests/temp
+
+  # Set config file for Shippable
+  - cp tests/config.shippable.neon tests/config.local.neon
 
 script:
   # Run PHP CodeSniffer
