@@ -31,10 +31,6 @@ extensions:
 	doctrine: Kdyby\Doctrine\DI\OrmExtension
 
 
-console:
-    url: https://hranicka.cz
-
-
 doctrine:
     user:
     password:
