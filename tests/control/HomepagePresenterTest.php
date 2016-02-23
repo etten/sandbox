@@ -16,7 +16,7 @@ class HomepagePresenterTest extends Etten\App\Tests\PresenterTestCase
 
 	public function testHandleDelete()
 	{
-		$this->expectException(\Exception::class);
+		$this->expectException(Nette\Application\BadRequestException::class);
 		$this->runSignal('delete');
 	}
 
