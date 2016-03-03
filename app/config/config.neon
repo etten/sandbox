@@ -30,6 +30,7 @@ extensions:
 	annotations: Kdyby\Annotations\DI\AnnotationsExtension
 	doctrine: Kdyby\Doctrine\DI\OrmExtension
 	migrations: Nextras\Migrations\Bridges\NetteDI\MigrationsExtension
+	deployment: Etten\Deployment\NetteExtension\DeploymentExtension
 
 
 doctrine:
@@ -45,3 +46,40 @@ migrations:
     dir: %rootDir%/migrations
     driver: mysql
     dbal: doctrine
+
+
+deployment:
+	ftp:
+		host: demo.hranicka.cz
+		user: demo.hranicka.cz
+		password: 'demo1.'
+		secured: yes
+
+	paths:
+		local: %rootDir%
+		remote: /web
+		ignore:
+			- '/.idea'
+			- '*.log'
+			- 'test*'
+			- 'sample*'
+			- 'example*'
+			- 'demo*'
+			- 'node_modules'
+			- '/log/*'
+			- '/temp/*'
+			- '!/temp/cache'
+			- '/temp/cache/*'
+			- '!/temp/sessions'
+			- '/temp/sessions/*'
+
+	jobs:
+		onStart:
+
+		onBeforeUpload:
+
+		onBeforeMove:
+			- 'http://hranicka.cz/service/deploy?job=beforeMove'
+
+		onFinish:
+			- 'http://hranicka.cz/service/deploy?job=finish'
