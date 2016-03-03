@@ -29,7 +29,7 @@ extensions:
 	events: Kdyby\Events\DI\EventsExtension
 	annotations: Kdyby\Annotations\DI\AnnotationsExtension
 	doctrine: Kdyby\Doctrine\DI\OrmExtension
-	migrations: Nextras\Migrations\Bridges\NetteDI\MigrationsExtension
+	migrations: Etten\Migrations\Bridges\NetteDI\MigrationsExtension
 	deployment: Etten\Deployment\NetteExtension\DeploymentExtension
 
 
@@ -43,9 +43,23 @@ doctrine:
 
 
 migrations:
-    dir: %rootDir%/migrations
-    driver: mysql
-    dbal: doctrine
+	groups:
+		structures:
+			directory: %rootDir%/migrations/structures
+
+		basic-data:
+			directory: %rootDir%/migrations/basic-data
+			dependencies:
+				- structures
+
+		dummy-data:
+			directory: %rootDir%/migrations/dummy-data
+			dependencies:
+				- structures
+				- basic-data
+
+	driver: mysql
+	dbal: doctrine
 
 
 deployment:
