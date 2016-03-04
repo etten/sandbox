@@ -47,3 +47,33 @@ Study them for deeper understanding.
 * [Kdyby\Console](https://github.com/Kdyby/Console)
 * [Kdyby\Events](https://github.com/Kdyby/Events)
 * [Kdyby\Doctrine](https://github.com/Kdyby/Doctrine)
+
+## CLI usage
+
+Application has built-in CLI support.
+
+It's realized via [Kdyby\Console](https://github.com/Kdyby/Console)
+(Nette Extension of [Symfony\Console](http://symfony.com/doc/current/components/console/introduction.html)).
+
+For list of each commands and options just run CLI:
+
+```bash
+$ php www/index.php -h
+```
+
+Via CLI you can for example:
+
+* work with Doctrine DBAL and ORM
+* run migrations
+* deploy application
+
+If you use [PhpStorm IDE](https://www.jetbrains.com/phpstorm/), you can operate with its built-in CLI tool.
+
+It's very simple and you get autocomplete suggestions for all commands and their options!
+
+Just go to `Settings - Tools - Command Line Tool Support`, add new `Tool Based on Symfony Console` and select
+path to `www/index.php` of the application. You don't need remember all the commands now.
+
+For more information see
+[Symfony2 Command Line Tool Integration](https://confluence.jetbrains.com/display/PhpStorm/Symfony2+Command+Line+Tool+Integration+-+Symfony+Development+using+PhpStorm),
+[Command Line Tools Based on Symfony Console (Doctrine, Laravel) in PhpStorm](http://blog.jetbrains.com/phpstorm/2013/09/command-line-tools-based-on-symfony-console-doctrine-laravel-in-phpstorm/).

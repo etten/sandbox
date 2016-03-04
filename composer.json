@@ -2,7 +2,7 @@
     "name": "etten/sandbox",
     "description": "The sandbox is a pre-packaged Nette Framework project, basic configured structure for your application.",
     "license": "MIT",
-    "keywords": ["nette", "sandbox", "bootstrap", "application"],
+    "keywords": ["php", "nette", "sandbox", "bootstrap", "application"],
     "authors": [
         {
             "name": "David Grudl",
