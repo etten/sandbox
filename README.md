@@ -37,10 +37,13 @@ directly via a web browser! Necessary file for Apache is included (`.htaccess`).
 
 ## Included packages
 
+Study them for deeper understanding.
+
 * [Nette framework](https://nette.org)
 * [Etten\App](https://github.com/etten/app)
-* [Artfocus\Migrations](https://github.com/artfocus/migrations)
-* [Artfocus\Codestyle](https://bitbucket.org/artfocus/codestyle.git)
+* [Etten\Migrations](https://github.com/etten/migrations)
+* [Etten\Codestyle](https://github.com/etten/codestyle)
+* [Etten\Deployment](https://github.com/etten/deployment)
 * [Kdyby\Console](https://github.com/Kdyby/Console)
 * [Kdyby\Events](https://github.com/Kdyby/Events)
 * [Kdyby\Doctrine](https://github.com/Kdyby/Doctrine)
