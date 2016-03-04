@@ -96,7 +96,7 @@ deployment:
 		onBeforeUpload:
 
 		onBeforeMove:
-			- 'https://%deployment.host%/service/deploy?job=beforeMove'
+			- 'https://%deployment.host%/?etten-maintainer-job=disable'
 
 		onFinish:
-			- 'https://%deployment.host%/service/deploy?job=finish'
+			- 'https://%deployment.host%/?etten-maintainer-job=enable'
