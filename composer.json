@@ -20,8 +20,8 @@
     "require": {
         "php": ">=7.0",
         "etten/app": "dev-master",
-        "etten/deployment": "dev-master",
-        "etten/migrations": "dev-master",
+        "etten/deployment": "^1.0",
+        "etten/migrations": "^1.0",
         "nette/application": "~2.3.6",
         "nette/bootstrap": "~2.3.0",
         "nette/caching": "~2.3.0",
