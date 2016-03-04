@@ -1,5 +1,8 @@
 parameters:
-
+	deployment:
+		host: hranicka.cz
+		user: demo.hranicka.cz
+		password: 'demo1.'
 
 php:
 	date.timezone: Europe/Prague
@@ -64,9 +67,9 @@ migrations:
 
 deployment:
 	ftp:
-		host: demo.hranicka.cz
-		user: demo.hranicka.cz
-		password: 'demo1.'
+		host: %deployment.host%
+		user: %deployment.user%
+		password: %deployment.password%
 		secured: yes
 
 	paths:
@@ -93,7 +96,7 @@ deployment:
 		onBeforeUpload:
 
 		onBeforeMove:
-			- 'http://hranicka.cz/service/deploy?job=beforeMove'
+			- 'https://%deployment.host%/service/deploy?job=beforeMove'
 
 		onFinish:
-			- 'http://hranicka.cz/service/deploy?job=finish'
+			- 'https://%deployment.host%/service/deploy?job=finish'
