@@ -4,6 +4,7 @@ parameters:
 		user: demo.hranicka.cz
 		password: 'demo1.'
 
+
 php:
 	date.timezone: Europe/Prague
 

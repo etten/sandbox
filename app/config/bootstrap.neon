@@ -4,6 +4,7 @@ parameters:
 	tempDir: %rootDir%/temp
 	wwwDir: %rootDir%/web
 
+
 configurator:
 	debug:
 		- 192.168.1.1 # IP addresses where debug mode is ALWAYS ON
