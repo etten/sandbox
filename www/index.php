@@ -2,12 +2,14 @@
 
 namespace Etten\App;
 
+use Etten\App\Maintenance;
+
 /** @var App $app */
 $app = require __DIR__ . '/../app/bootstrap.php';
 
 $maintainer = $app->createMaintainer();
 
-$locker = new Locker();
+$locker = new Maintenance\Locker();
 
 // Lock the Application
 $maintainer->addJob('disable', function () use ($locker) {
@@ -17,8 +19,8 @@ $maintainer->addJob('disable', function () use ($locker) {
 
 // Clean caches, then run Migrations.
 $maintainer->addJob('enable', function () use ($app) {
-	(new Cleaner($app))->clean();
-	(new Console($app))->run('migrations:continue');
+	(new Maintenance\Cleaner($app))->clean();
+	(new Maintenance\Console($app))->run('migrations:continue');
 });
 
 // Unlock the Application - it's ready.
