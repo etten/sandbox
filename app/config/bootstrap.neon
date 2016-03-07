@@ -2,7 +2,7 @@ parameters:
 	appDir: %rootDir%/app
 	logDir: %rootDir%/log
 	tempDir: %rootDir%/temp
-	wwwDir: %rootDir%/www
+	wwwDir: %rootDir%/web
 
 configurator:
 	debug:
