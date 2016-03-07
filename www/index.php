@@ -2,22 +2,19 @@
 
 namespace Etten\App;
 
+/** @var App $app */
 $app = require __DIR__ . '/../app/bootstrap.php';
 
-$maintainer = new Maintainer();
 $locker = new Locker();
 
-// Add some IPs for deploy permission.
-$maintainer->developers[] = '192.168.1.1';
-
 // Lock the Application
-if ($maintainer->isJob('disable')) {
+if ($app->isMaintainerJob('disable')) {
 	$locker->lock();
 	exit;
 }
 
 // Clean caches and unlock the Application.
-if ($maintainer->isJob('enable')) {
+if ($app->isMaintainerJob('enable')) {
 	(new Cleaner($app))->clean();
 	$locker->unlock();
 	exit;
