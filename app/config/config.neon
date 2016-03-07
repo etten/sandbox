@@ -36,6 +36,10 @@ extensions:
 	deployment: Etten\Deployment\NetteExtension\DeploymentExtension
 
 
+console:
+	disabled: no # always load all commands, not only in a CLI mode
+
+
 doctrine:
     user:
     password:
