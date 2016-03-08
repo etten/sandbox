@@ -22,6 +22,7 @@
         "etten/app": "^1.0",
         "etten/deployment": "^1.0",
         "etten/migrations": "^1.0",
+        "etten/symfony-events": "^1.0",
         "nette/application": "~2.3.6",
         "nette/bootstrap": "~2.3.0",
         "nette/caching": "~2.3.0",

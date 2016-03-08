@@ -31,6 +31,7 @@ services:
 extensions:
 	kdyby.console: Kdyby\Console\DI\ConsoleExtension
 	kdyby.events: Kdyby\Events\DI\EventsExtension
+	symfony.events: Etten\SymfonyEvents\EventsExtension
 	kdyby.annotations: Kdyby\Annotations\DI\AnnotationsExtension
 	kdyby.doctrine: Kdyby\Doctrine\DI\OrmExtension
 	etten.migrations: Etten\Migrations\Bridges\NetteDI\MigrationsExtension
