@@ -1,7 +1,7 @@
 parameters:
 
 
-doctrine:
+kdyby.doctrine:
     user: root
     password:
     dbname: sandbox_test

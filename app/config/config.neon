@@ -29,19 +29,19 @@ services:
 
 
 extensions:
-	console: Kdyby\Console\DI\ConsoleExtension
-	events: Kdyby\Events\DI\EventsExtension
-	annotations: Kdyby\Annotations\DI\AnnotationsExtension
-	doctrine: Kdyby\Doctrine\DI\OrmExtension
-	migrations: Etten\Migrations\Bridges\NetteDI\MigrationsExtension
-	deployment: Etten\Deployment\NetteExtension\DeploymentExtension
+	kdyby.console: Kdyby\Console\DI\ConsoleExtension
+	kdyby.events: Kdyby\Events\DI\EventsExtension
+	kdyby.annotations: Kdyby\Annotations\DI\AnnotationsExtension
+	kdyby.doctrine: Kdyby\Doctrine\DI\OrmExtension
+	etten.migrations: Etten\Migrations\Bridges\NetteDI\MigrationsExtension
+	etten.deployment: Etten\Deployment\NetteExtension\DeploymentExtension
 
 
-console:
+kdyby.console:
 	disabled: no # always load all commands, not only in a CLI mode
 
 
-doctrine:
+kdyby.doctrine:
     user:
     password:
     dbname:
@@ -57,7 +57,7 @@ doctrine:
     	App: %appDir%
 
 
-migrations:
+etten.migrations:
 	groups:
 		structures:
 			directory: %rootDir%/migrations/structures
@@ -77,7 +77,7 @@ migrations:
 	dbal: doctrine
 
 
-deployment:
+etten.deployment:
 	ftp:
 		host: %deployment.host%
 		user: %deployment.user%
