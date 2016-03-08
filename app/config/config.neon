@@ -89,6 +89,7 @@ deployment:
 			- 'demo*'
 			- 'node_modules'
 			- '/log/*'
+			- '/storage/*'
 			- '/temp/*'
 			- '!/temp/cache'
 			- '/temp/cache/*'

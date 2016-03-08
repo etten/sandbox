@@ -1,6 +1,7 @@
 parameters:
 	appDir: %rootDir%/app
 	logDir: %rootDir%/log
+	storageDir: %rootDir%/storage
 	tempDir: %rootDir%/temp
 	wwwDir: %rootDir%/web
 
