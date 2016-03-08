@@ -45,6 +45,13 @@ doctrine:
     user:
     password:
     dbname:
+
+    # remove when you don't have APCu enabled
+    metadataCache: Doctrine\Common\Cache\ApcuCache
+    queryCache: Doctrine\Common\Cache\ApcuCache
+    resultCache: Doctrine\Common\Cache\ApcuCache
+    hydrationCache: Doctrine\Common\Cache\ApcuCache
+
     defaultRepositoryClassName: Kdyby\Doctrine\EntityRepository
     metadata:
     	App: %appDir%
