@@ -9,6 +9,13 @@ that you can use as the skeleton for your new applications.
 It is designed to be the most usable and friendliest as possible. It focuses
 on security and performance and is definitely one of the safest PHP frameworks.
 
+## Requirements
+
+* PHP 7.0 or newer
+* [Composer installed](https://getcomposer.org/)
+* Apache server, mod_rewrite enabled
+* APCu extension *(required for Doctrine Cache; can be omitted, see [config](app/config/config.neon))*
+
 ## Installing
 
 1. The best way to install Sandbox is using Composer. If you don't have Composer yet, download
