@@ -38,7 +38,6 @@ extensions:
 	symfony.events: Etten\SymfonyEvents\EventsExtension
 	kdyby.annotations: Kdyby\Annotations\DI\AnnotationsExtension
 	kdyby.doctrine: Kdyby\Doctrine\DI\OrmExtension
-	rixxi.gedmo: Rixxi\Gedmo\DI\OrmExtension
 	etten.migrations: Etten\Migrations\Bridges\NetteDI\MigrationsExtension
 	etten.deployment: Etten\Deployment\NetteExtension\DeploymentExtension
 
@@ -61,30 +60,6 @@ kdyby.doctrine:
 	defaultRepositoryClassName: Kdyby\Doctrine\EntityRepository
 	metadata:
 		App: %appDir%
-
-	types:
-		bit: Doctrine\DBAL\Types\BooleanType
-
-	filters:
-		# without this softDeleteable won't work... probably
-		soft-deleteable: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
-
-
-rixxi.gedmo:
-	translatableLocale: cs_CZ
-	defaultLocale: cs_CZ
-
-	# enable all annotations
-	all: on
-	# enable per annotation
-	loggable: on
-	sluggable: on
-	softDeleteable: on
-	sortable: on
-	timestampable: on
-	translatable: on
-	treeable: on
-	uploadable: on
 
 
 etten.migrations:
