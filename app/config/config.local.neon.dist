@@ -2,6 +2,6 @@ parameters:
 
 
 kdyby.doctrine:
-    user: root
-    password:
-    dbname: sandbox
+	user: root
+	password:
+	dbname: sandbox

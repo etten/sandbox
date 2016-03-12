@@ -48,43 +48,43 @@ kdyby.console:
 
 
 kdyby.doctrine:
-    user:
-    password:
-    dbname:
+	user:
+	password:
+	dbname:
 
-    # remove when you don't have APCu enabled
-    metadataCache: Doctrine\Common\Cache\ApcuCache
-    queryCache: Doctrine\Common\Cache\ApcuCache
-    resultCache: Doctrine\Common\Cache\ApcuCache
-    hydrationCache: Doctrine\Common\Cache\ApcuCache
+	# remove when you don't have APCu enabled
+	metadataCache: Doctrine\Common\Cache\ApcuCache
+	queryCache: Doctrine\Common\Cache\ApcuCache
+	resultCache: Doctrine\Common\Cache\ApcuCache
+	hydrationCache: Doctrine\Common\Cache\ApcuCache
 
-    defaultRepositoryClassName: Kdyby\Doctrine\EntityRepository
-    metadata:
-    	App: %appDir%
+	defaultRepositoryClassName: Kdyby\Doctrine\EntityRepository
+	metadata:
+		App: %appDir%
 
-    types:
-        bit: Doctrine\DBAL\Types\BooleanType
+	types:
+		bit: Doctrine\DBAL\Types\BooleanType
 
-    filters:
-        # without this softDeleteable won't work... probably
-        soft-deleteable: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
+	filters:
+		# without this softDeleteable won't work... probably
+		soft-deleteable: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
 
 
 rixxi.gedmo:
-    translatableLocale: cs_CZ
-    defaultLocale: cs_CZ
+	translatableLocale: cs_CZ
+	defaultLocale: cs_CZ
 
-    # enable all annotations
-    all: on
-    # enable per annotation
-    loggable: on
-    sluggable: on
-    softDeleteable: on
-    sortable: on
-    timestampable: on
-    translatable: on
-    treeable: on
-    uploadable: on
+	# enable all annotations
+	all: on
+	# enable per annotation
+	loggable: on
+	sluggable: on
+	softDeleteable: on
+	sortable: on
+	timestampable: on
+	translatable: on
+	treeable: on
+	uploadable: on
 
 
 etten.migrations:
