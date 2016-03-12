@@ -1,3 +1,7 @@
+includes:
+	- project.neon
+
+
 parameters:
 	deployment:
 		host: hranicka.cz
