@@ -3,10 +3,6 @@ includes:
 
 
 parameters:
-	deployment:
-		host: hranicka.cz
-		user: demo.hranicka.cz
-		password: 'demo1.'
 
 
 php:
@@ -84,15 +80,19 @@ etten.migrations:
 
 
 etten.deployment:
+	# Environment rewrites global deployment configuration
+	environments:
+		production: %appDir%/config/config.production.neon
+
 	ftp:
-		host: %deployment.host%
-		user: %deployment.user%
-		password: %deployment.password%
-		secured: yes
+		host:
+		user:
+		password:
+		secured: no # When TRUE, sometimes fails with: "Unable to build data connection: Operation not permitted" (Windows)
 
 	paths:
 		local: %rootDir%
-		remote: /web
+		remote: /
 		ignore:
 			- '/.idea'
 			- '*.log'
@@ -115,7 +115,8 @@ etten.deployment:
 		onBeforeUpload:
 
 		onBeforeMove:
-			- 'https://%deployment.host%/?etten-maintainer-job=disable'
+			- 'https://HOST/?etten-maintainer-job=disable'
 
 		onFinish:
-			- 'https://%deployment.host%/?etten-maintainer-job=enable'
+			- 'rename app/config/config.production.neon app/config/config.local.neon'
+			- 'https://HOST/?etten-maintainer-job=enable'
