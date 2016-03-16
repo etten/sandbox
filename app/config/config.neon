@@ -22,6 +22,8 @@ nette:
 
 session:
 	expiration: 14 days
+	savePath: %tempDir%/sessions
+	gc_probability: 1 # default is 1; on some system is turned off
 
 
 services:
