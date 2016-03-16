@@ -40,6 +40,7 @@ extensions:
 	kdyby.doctrine: Kdyby\Doctrine\DI\OrmExtension
 	etten.migrations: Etten\Migrations\Bridges\NetteDI\MigrationsExtension
 	etten.deployment: Etten\Deployment\NetteExtension\DeploymentExtension
+	etten.doctrine.uuid: Etten\Doctrine\DI\UuidExtension
 
 
 kdyby.console:
