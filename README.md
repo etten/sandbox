@@ -23,15 +23,19 @@ it and install following [the instructions](https://getcomposer.org/doc/00-intro
 
 	`$ composer create-project etten/sandbox my-app`
 
-2. Make directories `temp`, `log` + `tests/temp`, `tests/log` writable.
+2. Install [Bower](http://bower.io/) dependencies. Use command:
 
-3. Create local configuration files and set up as you need (eg. database credentials).
+	`$ bower install`
+
+3. Make directories `temp`, `log` + `tests/temp`, `tests/log` writable.
+
+4. Create local configuration files and set up as you need (eg. database credentials).
 
 	`$ cp app/config/config.local.neon.dist app/config/config.local.neon`
 
 	`$ cp tests/config.local.neon.dist tests/config.local.neon`
 
-4. Navigate your browser to the `www` directory and you will see a welcome page.
+5. Navigate your browser to the `www` directory and you will see a welcome page.
 PHP 5.4 allows you run `php -S localhost:8888 -t www` to start the web server and
 then visit `http://localhost:8888` in your browser.
 

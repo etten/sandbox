@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>{ifset title}{include title|striptags} | {/ifset}Nette Sandbox</title>
+	<title>{ifset title}{include title|striptags} | {/ifset}Etten Nette Framework Sandbox</title>
 
-	<link rel="stylesheet" href="{$basePath}/css/style.css">
+	<link rel="stylesheet" href="/css/style.css">
 	<meta name="viewport" content="width=device-width">
 	{block head}{/block}
 </head>
@@ -16,9 +16,9 @@
 	{include content}
 
 	{block scripts}
-	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
-	<script src="{$basePath}/js/main.js"></script>
+	<script src="/bower/jquery/dist/jquery.min.js"></script>
+	<script src="/bower/nette-forms/src/assets/netteForms.js"></script>
+	<script src="/js/main.js"></script>
 	{/block}
 </body>
 </html>
