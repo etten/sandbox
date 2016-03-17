@@ -71,6 +71,7 @@ $ php www/index.php -h
 
 Via CLI you can for example:
 
+* clean application caches **(including Nette\DI and Latte)**
 * work with Doctrine DBAL and ORM
 * run migrations
 * deploy application

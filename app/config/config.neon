@@ -36,6 +36,7 @@ extensions:
 	symfony.events: Etten\SymfonyEvents\EventsExtension
 	kdyby.annotations: Kdyby\Annotations\DI\AnnotationsExtension
 	kdyby.doctrine: Kdyby\Doctrine\DI\OrmExtension
+	etten.cleaner: Etten\App\DI\CleanerExtension
 	etten.migrations: Etten\Migrations\Bridges\NetteDI\MigrationsExtension
 	etten.deployment: Etten\Deployment\NetteExtension\DeploymentExtension
 	etten.doctrine.uuid: Etten\Doctrine\DI\UuidExtension
