@@ -11,5 +11,6 @@ Etten\App\Tests\ContainerTestCase::$app = $app;
 
 $app->addBootstrapFile(__DIR__ . '/bootstrap.neon');
 $app->addConfigFile(__DIR__ . '/config.local.neon', 'local');
+$app->createConfigurator();
 
 return $app;
