@@ -2,16 +2,17 @@
 
 namespace App\Models\Articles;
 
-use Doctrine\ORM\Mapping as ORM;
-use Kdyby\Doctrine;
+use Doctrine\ORM;
+use Etten\Doctrine\Entities\Attributes\Id;
+use Etten\Doctrine\Entities\IdProvider;
 
 /**
- * @ORM\Entity()
+ * @ORM\Mapping\Entity()
  */
-class Article
+class Route implements IdProvider
 {
 
-	use Doctrine\Entities\Attributes\UniversallyUniqueIdentifier;
+	use Id;
 
 	/**
 	 * @ORM\Column(type="string")
