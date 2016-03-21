@@ -56,6 +56,7 @@ Study them for deeper understanding.
 * [Etten\Codestyle](https://github.com/etten/codestyle)
 * [Etten\Deployment](https://github.com/etten/deployment)
 * [Etten\SymfonyEvents](https://github.com/etten/symfony-events)
+* [Etten\Doctrine](https://github.com/etten/doctrine)
 * [Kdyby\Console](https://github.com/Kdyby/Console)
 * [Kdyby\Events](https://github.com/Kdyby/Events)
 * [Kdyby\Doctrine](https://github.com/Kdyby/Doctrine)
