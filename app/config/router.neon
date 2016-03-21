@@ -1,2 +1,6 @@
+parameters:
+	router: []
+
+
 services:
-	router: App\Router\RouterFactory()::create
+	router: App\Router\RouterFactory(App\Router\RouteRouter(%router%))::create
