@@ -2,4 +2,5 @@ services:
 	- App\Forms\FormFactory
 	- App\Forms\SignInFormFactory
 
+	- App\Models\Users\Authenticator
 	- App\Articles\ArticleRepository
