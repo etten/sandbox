@@ -9,13 +9,13 @@ use Etten\Doctrine\Entities\IdProvider;
 /**
  * @ORM\Mapping\Entity()
  */
-class Route implements IdProvider
+class Article implements IdProvider
 {
 
 	use Id;
 
 	/**
-	 * @ORM\Column(type="string")
+	 * @ORM\Mapping\Column(type="string")
 	 * @var string
 	 */
 	private $name = '';
