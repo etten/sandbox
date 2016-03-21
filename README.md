@@ -39,9 +39,15 @@ it and install following [the instructions](https://getcomposer.org/doc/00-intro
 
 	`$ php web/index.php orm:schema-tool:create`
 
+6. Create a User (username and password).
+
+	`$ php web/index.php user:create`
+
 6. Navigate your browser to the `www` directory and you will see a welcome page.
 PHP 5.4 allows you run `php -S localhost:8888 -t www` to start the web server and
 then visit `http://localhost:8888` in your browser.
+
+You can log-in as created user via `http://localhost:8888/sign/in`.
 
 ## Security warning
 

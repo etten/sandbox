@@ -4,3 +4,8 @@ services:
 
 	- App\Facade\UserFacade
 	- App\Models\Users\Authenticator
+
+
+kdyby.console:
+	commands:
+		- App\Models\Users\Console\UserCommand
