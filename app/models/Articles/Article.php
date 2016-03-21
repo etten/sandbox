@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Kdyby\Doctrine;
 
 /**
- * @ORM\Entity(repositoryClass="ArticleRepository", )
+ * @ORM\Entity()
  */
 class Article
 {
