@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Articles;
+namespace App\Models\Articles;
 
 use Doctrine\ORM\Mapping as ORM;
 use Kdyby\Doctrine;

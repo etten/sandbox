@@ -2,7 +2,7 @@
 
 namespace Tests\Articles;
 
-use App\Articles;
+use App\Models\Articles;
 use Etten\App\Tests\DoctrineTestCase;
 
 class ArticleRepositoryTest extends DoctrineTestCase
