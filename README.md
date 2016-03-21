@@ -35,7 +35,11 @@ it and install following [the instructions](https://getcomposer.org/doc/00-intro
 
 	`$ cp tests/config.local.neon.dist tests/config.local.neon`
 
-5. Navigate your browser to the `www` directory and you will see a welcome page.
+5. Create database schema.
+
+	`$ php web/index.php orm:schema-tool:create`
+
+6. Navigate your browser to the `www` directory and you will see a welcome page.
 PHP 5.4 allows you run `php -S localhost:8888 -t www` to start the web server and
 then visit `http://localhost:8888` in your browser.
 
