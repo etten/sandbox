@@ -2,25 +2,25 @@
 
 namespace App\Facade;
 
-use Doctrine\ORM;
+use Kdyby\Doctrine;
 
 abstract class AbstractFacade
 {
 
-	/** @var ORM\EntityManager */
+	/** @var Doctrine\EntityManager */
 	protected $em;
 
-	public function __construct(ORM\EntityManager $em)
+	public function __construct(Doctrine\EntityManager $em)
 	{
 		$this->em = $em;
 	}
 
-	protected function createQueryBuilder():ORM\QueryBuilder
+	protected function createQueryBuilder():Doctrine\QueryBuilder
 	{
 		return $this->em->createQueryBuilder();
 	}
 
-	protected function getRepository(string $entityName):ORM\EntityRepository
+	protected function getRepository(string $entityName):Doctrine\EntityRepository
 	{
 		return $this->em->getRepository($entityName);
 	}
