@@ -1,0 +1,33 @@
+<?php
+
+namespace App\Facade;
+
+use App\Models\Articles;
+use App\Models\Routes\Route;
+use Kdyby\Doctrine;
+
+class ArticleFacade extends AbstractFacade
+{
+
+	/**
+	 * @param Route $route
+	 * @return Articles\Article|null
+	 */
+	public function findOneByRoute(Route $route)
+	{
+		return $this->createJoinedQueryBuilder()
+			->where('a.route = :route')
+			->setParameter('route', $route)
+			->getQuery()
+			->getOneOrNullResult();
+	}
+
+	private function createJoinedQueryBuilder():Doctrine\QueryBuilder
+	{
+		return $this->createQueryBuilder()
+			->select('a, ar')
+			->from(Articles\Article::class, 'a')
+			->join('a.route', 'ar');
+	}
+
+}
