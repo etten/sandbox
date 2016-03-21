@@ -1,3 +1,5 @@
 services:
 	- App\Forms\FormFactory
+	- App\Forms\SignInFormFactory
+
 	- App\Articles\ArticleRepository
