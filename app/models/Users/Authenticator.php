@@ -2,19 +2,19 @@
 
 namespace App\Models\Users;
 
-use Kdyby\Doctrine\EntityManager;
+use App\Facade\UserFacade;
 use Nette\Security;
 use Nette\Utils;
 
 class Authenticator implements Security\IAuthenticator
 {
 
-	/** @var EntityManager */
-	private $em;
+	/** @var UserFacade */
+	private $userFacade;
 
-	public function __construct(EntityManager $em)
+	public function __construct(UserFacade $userFacade)
 	{
-		$this->em = $em;
+		$this->userFacade = $userFacade;
 	}
 
 	/**
@@ -27,7 +27,7 @@ class Authenticator implements Security\IAuthenticator
 	{
 		list($username, $password) = $credentials;
 
-		$user = $this->findUser($username);
+		$user = $this->userFacade->findOneByUsername($username);
 		if (!$user) {
 			throw new Security\AuthenticationException('User was not found.', self::IDENTITY_NOT_FOUND);
 		}
@@ -36,28 +36,16 @@ class Authenticator implements Security\IAuthenticator
 			throw new Security\AuthenticationException('The password is incorrect.', self::INVALID_CREDENTIAL);
 		}
 
-		$this->rehash($user, $password);
+		$this->rehashWhenNeeded($user, $password);
 
 		return $user;
 	}
 
-	/**
-	 * @param string $username
-	 * @return User|null
-	 */
-	private function findUser(string $username)
-	{
-		$repository = $this->em->getRepository(User::class);
-		return $repository->findOneBy(['username' => $username]);
-	}
-
-	private function rehash(User $user, string $password)
+	private function rehashWhenNeeded(User $user, string $password)
 	{
 		if ($user->needsRehash()) {
 			$user->setPassword($password);
-			$this->em
-				->persist($user)
-				->flush($user);
+			$this->userFacade->save($user);
 		}
 	}
 

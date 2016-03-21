@@ -2,4 +2,5 @@ services:
 	- App\Forms\FormFactory
 	- App\Forms\SignInFormFactory
 
+	- App\Facade\UserFacade
 	- App\Models\Users\Authenticator
