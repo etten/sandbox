@@ -3,6 +3,7 @@
 namespace Tests\Articles;
 
 use App\Models\Articles;
+use App\Models\Routes;
 use Etten\App\Tests\DoctrineTestCase;
 
 class ArticlePersistingTest extends DoctrineTestCase
@@ -18,6 +19,11 @@ class ArticlePersistingTest extends DoctrineTestCase
 	{
 		$article = new Articles\Article();
 		$article->setName('The Article');
+
+		$route = new Routes\Route('article');
+		$route->setUrl('the-article');
+
+		$article->setRoute($route);
 
 		$this->em->persist($article);
 		$this->em->flush();
