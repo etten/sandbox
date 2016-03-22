@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace Tests\Control;
 
 use App;
 use Etten;

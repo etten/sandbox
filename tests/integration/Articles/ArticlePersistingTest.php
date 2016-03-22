@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Articles;
+namespace Tests\Integration\Articles;
 
 use App\Models\Articles;
 use App\Models\Routes;
