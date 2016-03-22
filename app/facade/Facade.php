@@ -4,7 +4,7 @@ namespace App\Facade;
 
 use Kdyby\Doctrine;
 
-abstract class AbstractFacade
+abstract class Facade
 {
 
 	/** @var Doctrine\EntityManager */

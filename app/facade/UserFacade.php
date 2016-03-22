@@ -4,7 +4,7 @@ namespace App\Facade;
 
 use App\Models\Users\User;
 
-class UserFacade extends AbstractFacade
+class UserFacade extends Facade
 {
 
 	/**

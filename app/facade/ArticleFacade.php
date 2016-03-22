@@ -6,7 +6,7 @@ use App\Models\Articles;
 use App\Models\Routes\Route;
 use Kdyby\Doctrine;
 
-class ArticleFacade extends AbstractFacade
+class ArticleFacade extends Facade
 {
 
 	/**
