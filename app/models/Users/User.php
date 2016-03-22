@@ -4,13 +4,13 @@ namespace App\Models\Users;
 
 use Doctrine\ORM;
 use Etten\Doctrine\Entities\Attributes\Id;
-use Etten\Doctrine\Entities\IdProvider;
+use Etten\Doctrine\Entities\Entity;
 use Nette\Security;
 
 /**
  * @ORM\Mapping\Entity()
  */
-class User implements IdProvider, Security\IIdentity
+class User extends Entity implements Security\IIdentity
 {
 
 	use Id;

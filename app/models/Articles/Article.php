@@ -5,12 +5,12 @@ namespace App\Models\Articles;
 use App\Models\Routes\Route;
 use Doctrine\ORM;
 use Etten\Doctrine\Entities\Attributes\Id;
-use Etten\Doctrine\Entities\IdProvider;
+use Etten\Doctrine\Entities\Entity;
 
 /**
  * @ORM\Mapping\Entity()
  */
-class Article implements IdProvider
+class Article extends Entity
 {
 
 	use Id;
