@@ -50,7 +50,10 @@ class Route extends Entity
 		$this->type = $type;
 	}
 
-	public function __toString()
+	/**
+	 * @return string
+	 */
+	public function getPath():string
 	{
 		return '/' . $this->getUrl();
 	}
