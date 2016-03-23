@@ -8,6 +8,10 @@ services:
 	- App\Models\Users\Authenticator
 
 
+tracy:
+    email: admin@example.com
+
+
 kdyby.console:
 	commands:
 		- App\Models\Users\Console\UserCommand
