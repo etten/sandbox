@@ -4,7 +4,7 @@ namespace App;
 
 use Etten;
 
-require __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 $app = new Etten\App\App(__DIR__ . '/..');
 
