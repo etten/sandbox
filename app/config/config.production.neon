@@ -9,7 +9,6 @@ kdyby.doctrine:
 
 etten.deployment:
 	# Environment rewrites global deployment configuration
-	environments: []
 	ftp:
 		host:
 		user:

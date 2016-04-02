@@ -97,13 +97,18 @@ etten.deployment:
 		local: %rootDir%
 		remote: /
 		ignore:
+			# IDE
 			- '/.idea'
+
+			# Common files
 			- '*.log'
 			- 'test*'
 			- 'sample*'
 			- 'example*'
 			- 'demo*'
 			- 'node_modules'
+
+			# Etten App
 			- '/log/*'
 			- '/storage/*'
 			- '/temp/*'
