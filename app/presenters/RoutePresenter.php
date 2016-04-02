@@ -27,6 +27,9 @@ abstract class RoutePresenter extends BasePresenter
 	{
 		parent::beforeRender();
 		$this->template->route = $this->route;
+		$this->template->title = $this->route->getTitle();
+		$this->template->keywords = $this->route->getKeywords();
+		$this->template->description = $this->route->getDescription();
 	}
 
 }

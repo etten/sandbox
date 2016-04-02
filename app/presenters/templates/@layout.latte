@@ -3,10 +3,12 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>{ifset title}{include title|striptags} | {/ifset}Etten Nette Framework Sandbox</title>
+	<title>{ifset $title}{$title|striptags} | {/ifset}Etten Sandbox</title>
 
 	<link rel="stylesheet" href="/css/style.css">
 	<meta name="viewport" content="width=device-width">
+	<meta n:ifset="$keywords" name="keywords" content="{$keywords}">
+	<meta n:ifset="$description" name="description" content="{$description}">
 	{block head}{/block}
 </head>
 
