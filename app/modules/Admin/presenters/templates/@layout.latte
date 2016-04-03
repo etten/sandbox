@@ -5,7 +5,7 @@
 
 	<title>{ifset $title}{$title|striptags} | {/ifset}Etten Sandbox</title>
 
-	<link rel="stylesheet" href="/bower/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{$baseUrl}/bower/bootstrap/dist/css/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width">
 	<meta name="robots" content="noindex">
 	{block head}{/block}
@@ -44,9 +44,9 @@
 	</div>
 
 	{block scripts}
-	<script src="/bower/jquery/dist/jquery.min.js"></script>
-	<script src="/bower/nette-forms/src/assets/netteForms.js"></script>
-	<script src="/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="{$baseUrl}/bower/jquery/dist/jquery.min.js"></script>
+	<script src="{$baseUrl}/bower/nette-forms/src/assets/netteForms.js"></script>
+	<script src="{$baseUrl}/bower/bootstrap/dist/js/bootstrap.min.js"></script>
 	{/block}
 </body>
 </html>
