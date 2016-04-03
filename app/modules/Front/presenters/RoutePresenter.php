@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Presenters;
+namespace App\Front\Presenters;
 
 use App\Models\Routes\Route;
 use Nette\Application\BadRequestException;

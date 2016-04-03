@@ -1,6 +1,6 @@
 parameters:
 	router:
-		article: Article:default
+		article: Front:Article:default
 
 
 services:

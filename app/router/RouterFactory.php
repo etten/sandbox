@@ -25,7 +25,7 @@ class RouterFactory
 
 		$router[] = $this->routeRouter;
 
-		$router[] = new Routers\Route('<presenter>/<action>[/<id>]', 'Homepage:default');
+		$router[] = new Routers\Route('<presenter>/<action>[/<id>]', 'Front:Homepage:default');
 
 		return $router;
 	}
