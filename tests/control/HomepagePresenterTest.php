@@ -11,7 +11,7 @@ class HomepagePresenterTest extends Etten\App\Tests\PresenterTestCase
 
 	protected function getPresenterName():string
 	{
-		return 'Homepage';
+		return 'Front:Homepage';
 	}
 
 	public function testHandleDelete()
