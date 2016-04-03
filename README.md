@@ -47,7 +47,7 @@ it and install following [the instructions](https://getcomposer.org/doc/00-intro
 PHP 5.4 allows you run `php -S localhost:8888 -t www` to start the web server and
 then visit `http://localhost:8888` in your browser.
 
-You can log-in as created user via `http://localhost:8888/sign/in`.
+You can log-in as created user via `http://localhost:8888/admin/sign/in`.
 
 ## Security warning
 
