@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Front\Presenters;
+namespace App\Admin\Presenters;
 
 use App\Forms\SignInFormFactory;
 
@@ -23,7 +23,7 @@ class SignPresenter extends BasePresenter
 		$form = $this->signInFormFactory->create();
 
 		$form->onSuccess[] = function () {
-			$this->redirect('Homepage:');
+			$this->redirect(':Admin:Dashboard:');
 		};
 
 		return $form;

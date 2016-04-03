@@ -24,10 +24,26 @@ class RouterFactory
 		$router = new Routers\RouteList();
 
 		$router[] = $this->routeRouter;
-
-		$router[] = new Routers\Route('<presenter>/<action>[/<id>]', 'Front:Homepage:default');
+		$router[] = $this->createAdmin();
+		$router[] = $this->createFront();
 
 		return $router;
+	}
+
+	private function createAdmin()
+	{
+		$route = new Routers\RouteList('Admin');
+		$route[] = new Routers\Route('admin/<presenter>/<action>[/<id>]', 'Dashboard:default');
+
+		return $route;
+	}
+
+	private function createFront()
+	{
+		$route = new Routers\RouteList('Front');
+		$route[] = new Routers\Route('<presenter>/<action>[/<id>]', 'Homepage:default');
+
+		return $route;
 	}
 
 }

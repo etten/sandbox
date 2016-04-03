@@ -2,6 +2,7 @@
     "name": "etten/sandbox",
     "dependencies": {
         "jquery": ">=1.10 <2.0",
-        "nette-forms": "^2.3"
+        "nette-forms": "^2.3",
+        "bootstrap": "^3.3"
     }
 }
