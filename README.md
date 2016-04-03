@@ -21,27 +21,36 @@ on security and performance and is definitely one of the safest PHP frameworks.
 1. The best way to install Sandbox is using Composer. If you don't have Composer yet, download
 it and install following [the instructions](https://getcomposer.org/doc/00-intro.md). Then use command:
 
-	`$ composer create-project etten/sandbox my-app`
+```bash
+composer create-project etten/sandbox my-app
+```
 
 2. Install [Bower](http://bower.io/) dependencies. Use command:
 
-	`$ bower install`
+```bash
+bower install
+```
 
 3. Make directories `temp`, `log` + `tests/temp`, `tests/log` writable.
 
 4. Create local configuration files and set up as you need (eg. database credentials).
 
-	`$ cp app/config/config.local.neon.dist app/config/config.local.neon`
-
-	`$ cp tests/config.local.neon.dist tests/config.local.neon`
+```bash
+cp app/config/config.local.neon.dist app/config/config.local.neon
+cp tests/config.local.neon.dist tests/config.local.neon
+```
 
 5. Create database schema.
 
-	`$ php web/index.php orm:schema-tool:create`
+```bash
+php web/index.php orm:schema-tool:create
+```
 
 6. Create a User (username and password).
 
-	`$ php web/index.php user:create`
+```bash
+php web/index.php user:create
+```
 
 6. Navigate your browser to the `www` directory and you will see a welcome page.
 PHP 5.4 allows you run `php -S localhost:8888 -t www` to start the web server and
@@ -81,7 +90,7 @@ It's realized via [Kdyby\Console](https://github.com/Kdyby/Console)
 For list of each commands and options just run CLI:
 
 ```bash
-$ php www/index.php -h
+php www/index.php -h
 ```
 
 Via CLI you can for example:
