@@ -11,8 +11,15 @@ class RouterFactory
 	/** @var RouteRouter */
 	private $routeRouter;
 
-	public function __construct(RouteRouter $routeRouter)
+	/** @var int */
+	private $flags = 0;
+
+	public function __construct(bool $secured, RouteRouter $routeRouter)
 	{
+		if ($secured) {
+			$this->flags |= Nette\Application\IRouter::SECURED;
+		}
+
 		$this->routeRouter = $routeRouter;
 	}
 
@@ -33,7 +40,7 @@ class RouterFactory
 	private function createAdmin()
 	{
 		$route = new Routers\RouteList('Admin');
-		$route[] = new Routers\Route('admin/<presenter>/<action>[/<id>]', 'Dashboard:default');
+		$route[] = new Routers\Route('admin/<presenter>/<action>[/<id>]', 'Dashboard:default', $this->flags);
 
 		return $route;
 	}
@@ -41,7 +48,7 @@ class RouterFactory
 	private function createFront()
 	{
 		$route = new Routers\RouteList('Front');
-		$route[] = new Routers\Route('<presenter>/<action>[/<id>]', 'Homepage:default');
+		$route[] = new Routers\Route('<presenter>/<action>[/<id>]', 'Homepage:default', $this->flags);
 
 		return $route;
 	}

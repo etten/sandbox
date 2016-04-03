@@ -1,7 +1,9 @@
 parameters:
+	https: no
 	router:
 		article: Front:Article:default
 
 
 services:
-	router: App\Router\RouterFactory(App\Router\RouteRouter(%router%))::create
+	router.factory: App\Router\RouterFactory(%https%, App\Router\RouteRouter(%router%))
+	router: @router.factory::create
