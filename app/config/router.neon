@@ -1,5 +1,5 @@
 parameters:
-	https: no
+	https: yes
 	router:
 		article: Front:Article:default
 

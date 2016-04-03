@@ -24,13 +24,13 @@
 #	RewriteRule (.*) http://%1/$1 [R=301,L,QSA,NE]
 
 
-#	# Forcing HTTPS
-#	# Warning: Don't forget set other rules protocol and application config!
-#	<IfModule mod_ssl.c>
-#		RewriteCond %{HTTPS} !=on
-#	</IfModule>
-#	RewriteCond %{ENV:HTTPS} !^.*on
-#	RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,NE,L]
+	# Forcing HTTPS
+	# Warning: Don't forget set other rules protocol and application config!
+	<IfModule mod_ssl.c>
+		RewriteCond %{HTTPS} !=on
+	</IfModule>
+	RewriteCond %{ENV:HTTPS} !^.*on
+	RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,NE,L]
 
 #	# Forcing HTTP
 #	<IfModule mod_ssl.c>
