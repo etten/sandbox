@@ -3,6 +3,7 @@
 namespace App\Router;
 
 use App\Models\Routes;
+use Doctrine\DBAL\Exception\TableNotFoundException;
 use Kdyby\Doctrine\EntityManager;
 use Nette;
 use Nette\Application;
@@ -36,10 +37,7 @@ class RouteRouter implements Application\IRouter
 		$url = $httpRequest->getUrl();
 		$urlPath = ltrim($url->getPath(), '/');
 
-		$repository = $this->em->getRepository(Routes\Route::class);
-
-		/** @var Routes\Route|null $route */
-		$route = $repository->findOneBy(['url' => $urlPath]);
+		$route = $this->safeFindRoute($urlPath);
 		if (!$route) {
 			return NULL;
 		}
@@ -92,6 +90,21 @@ class RouteRouter implements Application\IRouter
 		}
 
 		return NULL;
+	}
+
+	/**
+	 * @param string $url
+	 * @return Routes\Route|null
+	 */
+	private function safeFindRoute(string $url)
+	{
+		$repository = $this->em->getRepository(Routes\Route::class);
+
+		try {
+			return $repository->findOneBy(['url' => $url]);
+		} catch (TableNotFoundException $e) {
+			return NULL;
+		}
 	}
 
 }
