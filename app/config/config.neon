@@ -24,6 +24,7 @@ nette:
 session:
 	expiration: 14 days
 	savePath: %tempDir%/sessions
+	cookie_secure: %https%
 	gc_probability: 1 # default is 1; on some system is turned off
 
 
