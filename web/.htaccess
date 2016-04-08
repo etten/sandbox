@@ -26,17 +26,20 @@
 
 	# Forcing HTTPS
 	# Warning: Don't forget set other rules protocol and application config!
+	# Warning: When using CloudFlare or another proxy, setup HTTPS redirect rules there!
 	<IfModule mod_ssl.c>
 		RewriteCond %{HTTPS} !=on
 	</IfModule>
-	RewriteCond %{ENV:HTTPS} !^.*on
+	RewriteCond %{ENV:HTTPS} !=on
+	RewriteCond %{HTTP:X-Forwarded-Proto} !=https
 	RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,NE,L]
 
 #	# Forcing HTTP
 #	<IfModule mod_ssl.c>
 #		RewriteCond %{HTTPS} =on
 #	</IfModule>
-#	RewriteCond %{ENV:HTTPS} ^.*on
+#	RewriteCond %{ENV:HTTPS} =on
+#	RewriteCond %{HTTP:X-Forwarded-Proto} =https
 #	RewriteCond %{HTTP_HOST} !^((.+)\.)?example\.com$ [NC]
 #	RewriteCond %{THE_REQUEST} !^[A-Z]+\ /admin/.*
 #	RewriteCond %{REQUEST_FILENAME} !-f
