@@ -49,7 +49,7 @@
 #	RewriteCond %{HTTP_HOST} ^((.+)\.)?example\.com$ [NC]
 #	RewriteCond %{REQUEST_FILENAME} !-f
 #	RewriteCond %{THE_REQUEST} !^[A-Z]+\ /service/.*
-#	RewriteRule (.*) http://www.example.com/$1 [R=301,L,QSA,NE]
+#	RewriteRule (.*) https://www.example.com/$1 [R=301,L,QSA,NE]
 
 #	# Web-specific redirection
 #	RewriteRule ^page-from.htm$ page-to [R=301,L,QSA]
