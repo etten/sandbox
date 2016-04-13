@@ -36,6 +36,7 @@ before_script:
   - chmod -R 777 tests/temp
 
   # Set config file for Shippable
+  - cp tests/config.shippable.neon app/config/config.local.neon
   - cp tests/config.shippable.neon tests/config.local.neon
 
 script:
