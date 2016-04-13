@@ -11,8 +11,8 @@ parameters:
 			- 127.0.0.1
 			- ::1
 
-		# Additionally you can set secret token instead IP address
-		token:
+		# Additionally you can set secret token which is read prior to IP address
+		token: ''
 
 
 configurator:
