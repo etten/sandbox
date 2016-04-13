@@ -29,8 +29,11 @@ before_script:
   - mkdir -p shippable/testresults
 
   # Set file/directory permissions
-  - chmod -R 777 tests/temp
+  - chmod -R 777 log
+  - chmod -R 777 temp
+  - chmod -R 777 storage
   - chmod -R 777 tests/log
+  - chmod -R 777 tests/temp
 
   # Set config file for Shippable
   - cp tests/config.shippable.neon tests/config.local.neon
