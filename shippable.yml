@@ -44,3 +44,7 @@ script:
 
   # Run Migrations
   - php -f tests/index.php migrations:reset
+
+after_success:
+  # Deploy it
+  - if [ "$BRANCH" == "production" ]; then php -f www/index.php deployment:production -n; fi

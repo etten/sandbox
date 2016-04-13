@@ -5,10 +5,18 @@ parameters:
 	tempDir: %rootDir%/temp
 	wwwDir: %rootDir%/web
 
+	developer:
+		# Run in development state for specific IPs
+		ips:
+			- 127.0.0.1
+			- ::1
+
+		# Additionally you can set secret token instead IP address
+		token:
+
 
 configurator:
-	debug:
-		- 192.168.1.1 # IP addresses where debug mode is ALWAYS ON
+	developer: %developer%
 
 	load:
 		- %appDir%

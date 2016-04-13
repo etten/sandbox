@@ -16,8 +16,8 @@ etten.deployment:
 
 	jobs:
 		onBeforeMove:
-			- 'https://HOST/?etten-maintainer-job=disable'
+			- 'https://HOST/?etten-maintainer-job=disable&etten-maintainer-token=%developer.token%'
 
 		onFinish:
 			- 'rename /app/config/config.production.neon /app/config/config.local.neon'
-			- 'https://HOST/?etten-maintainer-job=enable'
+			- 'https://HOST/?etten-maintainer-job=enable&etten-maintainer-token=%developer.token%'
