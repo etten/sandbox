@@ -40,19 +40,25 @@ cp app/config/config.local.neon.dist app/config/config.local.neon
 cp tests/config.local.neon.dist tests/config.local.neon
 ```
 
-5. Create database schema.
+5. Configure your bootstrap file in `app/config/bootstrap.neon` (optionally):
+
+* Directory paths.
+* Developer IP addresses.
+* Secret token (eg. for CI/CD service like Shippable).
+
+6. Create database schema.
 
 ```bash
 php web/index.php orm:schema-tool:create
 ```
 
-6. Create a User (username and password).
+7. Create a User (username and password).
 
 ```bash
 php web/index.php user:create
 ```
 
-6. Navigate your browser to the `www` directory and you will see a welcome page.
+8. Navigate your browser to the `www` directory and you will see a welcome page.
 PHP 5.4 allows you run `php -S localhost:8888 -t www` to start the web server and
 then visit `http://localhost:8888` in your browser.
 
