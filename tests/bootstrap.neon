@@ -2,3 +2,8 @@ parameters:
 	testDir: %rootDir%/tests
 	logDir: %rootDir%/tests/log
 	tempDir: %rootDir%/tests/temp
+
+
+configurator:
+	load:
+		- %testDir%
