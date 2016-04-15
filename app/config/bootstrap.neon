@@ -11,7 +11,7 @@ parameters:
 			- 127.0.0.1
 			- ::1
 
-		# Additionally you can set secret token which is read prior to IP address
+		# Additionally you can set secret token which is read prior to IP address.
 		# Token is read from HTTP GET "etten-maintainer-token" parameter.
 		token: ''
 
