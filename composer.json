@@ -19,7 +19,7 @@
     ],
     "require": {
         "php": ">=7.0",
-        "etten/app": "~2.1",
+        "etten/app": "~2.2",
         "etten/deployment": "^1.2",
         "etten/migrations": "^2.0",
         "etten/symfony-events": "^1.0",
