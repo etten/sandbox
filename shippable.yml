@@ -50,3 +50,6 @@ script:
 after_success:
   # Deploy it
   - if [ "$BRANCH" == "production" ]; then php -f www/index.php deployment:production -n; fi
+
+  # Check HTTP status
+  - if [ "$BRANCH" == "production" ]; then URL="https://www.example.com" check-status-code ; fi

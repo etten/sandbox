@@ -104,7 +104,7 @@ Via CLI you can for example:
 * clean application caches **(including Nette\DI and Latte)**
 * work with Doctrine DBAL and ORM
 * run migrations
-* deploy application
+* deploy application (it should be launched by CI/CD service)
 
 If you use [PhpStorm IDE](https://www.jetbrains.com/phpstorm/), you can operate with its built-in CLI tool.
 
