@@ -8,16 +8,29 @@ kdyby.doctrine:
 
 
 etten.deployment:
-	# Environment rewrites global deployment configuration
-	ftp:
+#	# If you need old FTP instead of SSH: Uncomment this and comment SSH.
+#	ftp:
+#		host:
+#		user:
+#		password:
+
+	ssh:
 		host:
 		user:
 		password:
 
 	jobs:
 		onBeforeMove:
-			- 'https://HOST/?etten-maintainer-job=disable&etten-maintainer-token=%developer.token%'
+#			# If you can't run PHP via SSH, you can manage application via HTTP.
+#			- 'https://HOST/?etten-maintainer-job=disable'
+			- 'ssh php web/index.php maintainer:disable'
+
+		onRemote:
+			# This runs a remote script which moves and deletes files server-side (faster).
+			- 'ssh php .deploy.php'
 
 		onFinish:
 			- 'rename /app/config/config.production.neon /app/config/config.local.neon'
-			- 'https://HOST/?etten-maintainer-job=enable&etten-maintainer-token=%developer.token%'
+#			# If you can't run PHP via SSH, you can manage application via HTTP.
+#			- 'https://HOST/?etten-maintainer-job=enable'
+			- 'ssh php web/index.php maintainer:enable'
