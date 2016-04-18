@@ -28,8 +28,9 @@ before_script:
 
   # Set file/directory permissions
   - chmod -R 777 log
-  - chmod -R 777 temp
   - chmod -R 777 storage
+  - chmod -R 777 temp
+
   - chmod -R 777 tests/log
   - chmod -R 777 tests/temp
 
