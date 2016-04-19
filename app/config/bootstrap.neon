@@ -18,6 +18,3 @@ parameters:
 
 configurator:
 	developer: %developer%
-
-	load:
-		- %appDir%
