@@ -19,18 +19,21 @@ etten.deployment:
 		user:
 		password:
 
+	paths:
+		remote: / # This path is also available as ~ in jobs bellow.
+
 	jobs:
 		onBeforeMove:
 #			# If you can't run PHP via SSH, you can manage application via HTTP.
 #			- 'https://HOST/?etten-maintainer-job=disable'
-			- 'ssh php web/index.php maintainer:disable'
+			- 'ssh php ~web/index.php maintainer:disable'
 
 		onRemote:
 			# This runs a remote script which moves and deletes files server-side (faster).
-			- 'ssh php .deploy.php'
+			- 'ssh php ~.deploy.php'
 
 		onFinish:
 			- 'rename /app/config/config.production.neon /app/config/config.local.neon'
 #			# If you can't run PHP via SSH, you can manage application via HTTP.
 #			- 'https://HOST/?etten-maintainer-job=enable'
-			- 'ssh php web/index.php maintainer:enable'
+			- 'ssh php ~web/index.php maintainer:enable'
