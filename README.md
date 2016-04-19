@@ -18,47 +18,28 @@ on security and performance and is definitely one of the safest PHP frameworks.
 
 ## Installing
 
-1. The best way to install Sandbox is using Composer. If you don't have Composer yet, download
-it and install following [the instructions](https://getcomposer.org/doc/00-intro.md). Then use command:
+1. The best way to install Sandbox is using [Composer](https://getcomposer.org/doc/00-intro.md).
+When you have Composer installed, run these commands and follow instructions:
 
 ```bash
-composer create-project etten/sandbox my-app
+$ composer create-project etten/sandbox my-app
+$ cd my-app
+$ php install.php
 ```
 
-2. Install [Bower](http://bower.io/) dependencies. Use command:
-
-```bash
-bower install
-```
-
-3. Make directories `temp`, `log` + `tests/temp`, `tests/log` writable.
-
-4. Create local configuration files and set up as you need (eg. database credentials).
-
-```bash
-cp app/config/config.local.neon.dist app/config/config.local.neon
-cp tests/config.local.neon.dist tests/config.local.neon
-```
-
-5. Configure your bootstrap file in `app/config/bootstrap.neon` (optionally):
-
-* Directory paths.
-* Developer IP addresses.
-* Secret token (eg. for CI/CD service like Shippable).
-
-6. Create database schema.
+2. Create database schema.
 
 ```bash
 php web/index.php orm:schema-tool:create
 ```
 
-7. Create a User (username and password).
+3. Create a User (username and password).
 
 ```bash
 php web/index.php user:create
 ```
 
-8. Navigate your browser to the `www` directory and you will see a welcome page.
+4. Navigate your browser to the `www` directory and you will see a welcome page.
 PHP 5.4 allows you run `php -S localhost:8888 -t www` to start the web server and
 then visit `http://localhost:8888` in your browser.
 
