@@ -2,6 +2,6 @@ parameters:
 
 
 kdyby.doctrine:
-	user: root
-	password:
-	dbname: sandbox_test
+	user: #<database-user>
+	password: #<database-password>
+	dbname: #<database-test-name>
