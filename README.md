@@ -18,7 +18,7 @@ on security and performance and is definitely one of the safest PHP frameworks.
 
 ## Installing
 
-1. The best way to install Sandbox is using [Composer](https://getcomposer.org/doc/00-intro.md).
+The best way to install Sandbox is using [Composer](https://getcomposer.org/doc/00-intro.md).
 When you have Composer installed, run these commands and follow instructions:
 
 ```bash
@@ -27,19 +27,19 @@ $ cd my-app
 $ php install.php
 ```
 
-2. Create database schema.
+Create database schema.
 
 ```bash
 php web/index.php orm:schema-tool:create
 ```
 
-3. Create a User (username and password).
+Create a User (username and password).
 
 ```bash
 php web/index.php user:create
 ```
 
-4. Navigate your browser to the `www` directory and you will see a welcome page.
+Navigate your browser to the `www` directory and you will see a welcome page.
 PHP 5.4 allows you run `php -S localhost:8888 -t www` to start the web server and
 then visit `http://localhost:8888` in your browser.
 
