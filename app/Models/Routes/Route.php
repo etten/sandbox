@@ -5,7 +5,6 @@ namespace App\Models\Routes;
 use Doctrine\ORM;
 use Etten\Doctrine\Entities\Attributes\Id;
 use Etten\Doctrine\Entities\Entity;
-use Nette\Utils\Strings;
 
 /**
  * @ORM\Mapping\Entity()
@@ -72,7 +71,7 @@ class Route extends Entity
 	 */
 	public function setUrl(string $url)
 	{
-		$this->url = Strings::webalize($url, '/');
+		$this->url = RouteHelpers::webalize($url, '/');
 		return $this;
 	}
 
