@@ -21,6 +21,9 @@ install:
   # Composer
   - composer install --no-interaction --prefer-dist
 
+  # Bower
+  - bower install --allow-root --config.interactive=false
+
 before_script:
   # Prepare Shippable directories
   - mkdir -p shippable/codecoverage
