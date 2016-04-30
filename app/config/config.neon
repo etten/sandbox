@@ -123,3 +123,6 @@ etten.deployment:
 			- '/temp/cache/*'
 			- '!/temp/sessions'
 			- '/temp/sessions/*'
+
+			# CI/CD
+			- '/shippable'
