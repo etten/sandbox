@@ -86,6 +86,7 @@ etten.migrations:
 etten.deployment:
 	# Environment rewrites global deployment configuration
 	environments:
+		staging: %appDir%/config/config.staging.neon
 		production: %appDir%/config/config.production.neon
 
 #	# If you need old FTP instead of SSH: Uncomment this and comment SSH.

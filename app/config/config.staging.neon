@@ -23,7 +23,7 @@ etten.deployment:
 		remote: / # This path is also available as ~ in jobs bellow.
 		ignore:
 			# Do not deploy opposite environment config
-			- '/app/config/config.staging.neon'
+			- '/app/config/config.production.neon'
 
 	jobs:
 		onBeforeMove:
@@ -36,7 +36,7 @@ etten.deployment:
 			- 'ssh php ~.deploy.php'
 
 		onFinish:
-			- 'rename /app/config/config.production.neon /app/config/config.local.neon'
+			- 'rename /app/config/config.staging.neon /app/config/config.local.neon'
 #			# If you can't run PHP via SSH, you can manage application via HTTP.
 #			- 'https://HOST/?etten-maintainer-job=enable'
 			- 'ssh php ~web/index.php maintainer:enable'

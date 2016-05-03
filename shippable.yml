@@ -53,7 +53,9 @@ script:
 
 after_success:
   # Deploy it
+  - if [ "$BRANCH" == "staging" ]; then php -f web/index.php deployment:staging -n; fi
   - if [ "$BRANCH" == "production" ]; then php -f web/index.php deployment:production -n; fi
 
   # Check HTTP status
+  - if [ "$BRANCH" == "staging" ]; then URL="https://www.example.com" check-status-code ; fi
   - if [ "$BRANCH" == "production" ]; then URL="https://www.example.com" check-status-code ; fi
