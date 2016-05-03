@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d203b8d183c718a88695c1648368119a",
-    "content-hash": "0a228a42fe910f0acec132093d9a92c1",
+    "hash": "868823e9d6666de5647e118da5910674",
+    "content-hash": "f2c7175ee4b0b75463c6464f43dcd682",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -608,16 +608,16 @@
         },
         {
             "name": "etten/app",
-            "version": "v2.3.3",
+            "version": "v2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/app.git",
-                "reference": "97b43ac5549c3e3cb013d86d2b330ca0306d649d"
+                "reference": "2104d28aa4681c606b6752ee3a0370c2d52b3c80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/app/zipball/97b43ac5549c3e3cb013d86d2b330ca0306d649d",
-                "reference": "97b43ac5549c3e3cb013d86d2b330ca0306d649d",
+                "url": "https://api.github.com/repos/etten/app/zipball/2104d28aa4681c606b6752ee3a0370c2d52b3c80",
+                "reference": "2104d28aa4681c606b6752ee3a0370c2d52b3c80",
                 "shasum": ""
             },
             "require": {
@@ -656,27 +656,27 @@
                 "bootstrap",
                 "nette"
             ],
-            "time": "2016-04-23 22:06:43"
+            "time": "2016-05-03 12:59:47"
         },
         {
             "name": "etten/deployment",
-            "version": "v2.1.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/deployment.git",
-                "reference": "ca7b237e9ccd88b7b8492ab36b2f0650b6763262"
+                "reference": "fcfb664ac22a02541e9ab8df386bb6921b4e0a21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/deployment/zipball/ca7b237e9ccd88b7b8492ab36b2f0650b6763262",
-                "reference": "ca7b237e9ccd88b7b8492ab36b2f0650b6763262",
+                "url": "https://api.github.com/repos/etten/deployment/zipball/fcfb664ac22a02541e9ab8df386bb6921b4e0a21",
+                "reference": "fcfb664ac22a02541e9ab8df386bb6921b4e0a21",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0"
             },
             "require-dev": {
-                "etten/codestyle": "^1.0",
+                "etten/codestyle": "^2.0",
                 "mikey179/vfsstream": "^1.6",
                 "nette/di": "^2.3",
                 "phpunit/phpunit": "^5.1",
@@ -706,7 +706,7 @@
                 "php",
                 "upload"
             ],
-            "time": "2016-04-19 11:09:36"
+            "time": "2016-05-03 14:03:19"
         },
         {
             "name": "etten/doctrine",
