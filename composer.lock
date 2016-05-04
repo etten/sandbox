@@ -660,16 +660,16 @@
         },
         {
             "name": "etten/deployment",
-            "version": "v3.0.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/deployment.git",
-                "reference": "fcfb664ac22a02541e9ab8df386bb6921b4e0a21"
+                "reference": "e4450d72faf6a887d0868147ba2804734550e789"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/deployment/zipball/fcfb664ac22a02541e9ab8df386bb6921b4e0a21",
-                "reference": "fcfb664ac22a02541e9ab8df386bb6921b4e0a21",
+                "url": "https://api.github.com/repos/etten/deployment/zipball/e4450d72faf6a887d0868147ba2804734550e789",
+                "reference": "e4450d72faf6a887d0868147ba2804734550e789",
                 "shasum": ""
             },
             "require": {
@@ -706,7 +706,7 @@
                 "php",
                 "upload"
             ],
-            "time": "2016-05-03 14:03:19"
+            "time": "2016-05-04 07:58:14"
         },
         {
             "name": "etten/doctrine",
