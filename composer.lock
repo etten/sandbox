@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e6fff75612d688e62466c6c631f97d55",
-    "content-hash": "0027b934328117e8a65f1d754a4c2f23",
+    "hash": "2e8e7822342524e9c92fcb5bd0bcda02",
+    "content-hash": "5b66aea3578670f4c1e92dc4772b51b1",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -660,16 +660,16 @@
         },
         {
             "name": "etten/deployment",
-            "version": "v3.0.1",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/deployment.git",
-                "reference": "e4450d72faf6a887d0868147ba2804734550e789"
+                "reference": "93656acab2550e2205c3dd742ee22d8054408d11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/deployment/zipball/e4450d72faf6a887d0868147ba2804734550e789",
-                "reference": "e4450d72faf6a887d0868147ba2804734550e789",
+                "url": "https://api.github.com/repos/etten/deployment/zipball/93656acab2550e2205c3dd742ee22d8054408d11",
+                "reference": "93656acab2550e2205c3dd742ee22d8054408d11",
                 "shasum": ""
             },
             "require": {
@@ -706,7 +706,7 @@
                 "php",
                 "upload"
             ],
-            "time": "2016-05-04 07:58:14"
+            "time": "2016-05-11 11:21:32"
         },
         {
             "name": "etten/doctrine",
@@ -2629,20 +2629,20 @@
     "packages-dev": [
         {
             "name": "etten/codestyle",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/codestyle.git",
-                "reference": "d7002f29af8f6ac535fec19178f04f0318c9c006"
+                "reference": "41ec1b865aed900bf385a88c1c307c55996a54ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/codestyle/zipball/d7002f29af8f6ac535fec19178f04f0318c9c006",
-                "reference": "d7002f29af8f6ac535fec19178f04f0318c9c006",
+                "url": "https://api.github.com/repos/etten/codestyle/zipball/41ec1b865aed900bf385a88c1c307c55996a54ca",
+                "reference": "41ec1b865aed900bf385a88c1c307c55996a54ca",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0"
+                "php": ">=7.0"
             },
             "require-dev": {
                 "squizlabs/php_codesniffer": "~2.6.0"
@@ -2659,7 +2659,7 @@
                 }
             ],
             "description": "Etten Coding Standards for PHP CodeSniffer",
-            "time": "2016-04-21 07:32:40"
+            "time": "2016-05-11 09:33:37"
         },
         {
             "name": "myclabs/deep-copy",
