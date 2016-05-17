@@ -13,7 +13,9 @@ class CliHelpers
 			echo '[' . $default . '] ';
 		}
 
-		$return = stream_get_line(STDIN, 1024, "\n");
+		$handle = fopen('php://stdin', 'r');
+		$return = trim(fgets($handle));
+		fclose($handle);
 
 		return ($return === '') ?
 			$default :
