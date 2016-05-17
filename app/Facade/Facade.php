@@ -2,27 +2,9 @@
 
 namespace App\Facade;
 
-use Kdyby\Doctrine;
+use Etten\Doctrine;
 
-abstract class Facade
+abstract class Facade extends Doctrine\Facade\Facade
 {
-
-	/** @var Doctrine\EntityManager */
-	protected $em;
-
-	public function __construct(Doctrine\EntityManager $em)
-	{
-		$this->em = $em;
-	}
-
-	protected function createQueryBuilder():Doctrine\QueryBuilder
-	{
-		return $this->em->createQueryBuilder();
-	}
-
-	protected function getRepository(string $entityName):Doctrine\EntityRepository
-	{
-		return $this->em->getRepository($entityName);
-	}
 
 }
