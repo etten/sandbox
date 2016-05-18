@@ -13,7 +13,7 @@
         "php": ">=7.0",
         "etten/app": "~2.3",
         "etten/deployment": "^3.1",
-        "etten/migrations": "^2.0",
+        "etten/migrations": "^3.0",
         "etten/symfony-events": "^1.0",
         "etten/doctrine": "^2.1",
         "nette/application": "~2.3.6",

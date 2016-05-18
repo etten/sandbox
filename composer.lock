@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9d48c5558ec79192fd9e320a94b6db1b",
-    "content-hash": "f1bed340ba7d316faa377fd42c65770f",
+    "hash": "b85e0b0de0b016d0c2e21d26a10aea96",
+    "content-hash": "9be2e16a27ce243887491b08a4c5245c",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -759,16 +759,16 @@
         },
         {
             "name": "etten/migrations",
-            "version": "v2.0.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/migrations.git",
-                "reference": "9d0a4cb7bfed7e11c97676988464807775d82418"
+                "reference": "f93b9b533bb9d6f276713520902bd2689df20f2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/migrations/zipball/9d0a4cb7bfed7e11c97676988464807775d82418",
-                "reference": "9d0a4cb7bfed7e11c97676988464807775d82418",
+                "url": "https://api.github.com/repos/etten/migrations/zipball/f93b9b533bb9d6f276713520902bd2689df20f2f",
+                "reference": "f93b9b533bb9d6f276713520902bd2689df20f2f",
                 "shasum": ""
             },
             "require": {
@@ -777,14 +777,14 @@
             "require-dev": {
                 "dibi/dibi": "~2.3",
                 "doctrine/dbal": "~2.5",
-                "etten/codestyle": "^1.0",
+                "etten/codestyle": "^2.0",
                 "mockery/mockery": "~0.9",
                 "nette/database": "~2.2",
                 "nette/di": "~2.3",
                 "nette/tester": "~1.4",
                 "nette/utils": "~2.3",
                 "nextras/dbal": "@dev",
-                "squizlabs/php_codesniffer": "^2.5",
+                "squizlabs/php_codesniffer": "~2.6.0",
                 "symfony/console": "~2.6"
             },
             "suggest": {
@@ -798,17 +798,14 @@
             "autoload": {
                 "psr-4": {
                     "Etten\\Migrations\\": "src/"
-                },
-                "classmap": [
-                    "src/exceptions.php"
-                ]
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "description": "Database migrations runner",
-            "time": "2016-04-01 16:16:14"
+            "time": "2016-05-18 19:42:53"
         },
         {
             "name": "etten/symfony-events",
@@ -2514,16 +2511,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.1.1",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "1289d16209491b584839022f29257ad859b8532d"
+                "reference": "dff51f72b0706335131b00a7f49606168c582594"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/1289d16209491b584839022f29257ad859b8532d",
-                "reference": "1289d16209491b584839022f29257ad859b8532d",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/dff51f72b0706335131b00a7f49606168c582594",
+                "reference": "dff51f72b0706335131b00a7f49606168c582594",
                 "shasum": ""
             },
             "require": {
@@ -2535,7 +2532,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -2569,7 +2566,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-01-20 09:13:37"
+            "time": "2016-05-18 14:26:46"
         },
         {
             "name": "tracy/tracy",
