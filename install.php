@@ -55,7 +55,7 @@ class InstallHelpers
 
 	private static function searchFiles(string $folder, string $pattern = '.*')
 	{
-		$dir = new \RecursiveDirectoryIterator($folder);
+		$dir = new \RecursiveDirectoryIterator($folder, \RecursiveDirectoryIterator::SKIP_DOTS);
 		$ite = new \RecursiveIteratorIterator($dir);
 		$files = new \RegexIterator($ite, '~' . $pattern . '~', \RegexIterator::GET_MATCH);
 
