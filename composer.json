@@ -11,11 +11,11 @@
     ],
     "require": {
         "php": ">=7.0",
-        "etten/app": "~2.3",
+        "etten/app": "^2.3",
         "etten/deployment": "^3.1",
         "etten/migrations": "^3.0",
         "etten/symfony-events": "^1.0",
-        "etten/doctrine": "^2.1",
+        "etten/doctrine": "^2.2",
         "nette/application": "~2.3.6",
         "nette/bootstrap": "~2.3.0",
         "nette/caching": "~2.4.0",
