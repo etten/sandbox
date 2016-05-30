@@ -7,18 +7,18 @@
 
 namespace App\Admin\Presenters;
 
-use App\Facade\UserFacade;
 use App\Models\Users\User;
+use App\Models\Users\Users;
 use Nette\Application\UI\Form;
 
 class UserPresenter extends BasePresenter
 {
 
 	/**
-	 * @var UserFacade
+	 * @var Users
 	 * @inject
 	 */
-	public $userFacade;
+	public $users;
 
 	protected function createComponentEditForm()
 	{
@@ -53,7 +53,7 @@ class UserPresenter extends BasePresenter
 	{
 		$user = $this->getLoggedUser();
 		$user->setPassword($values['newPass']);
-		$this->userFacade->save($user);
+		$this->users->save($user);
 
 		$this->flashMessage('Heslo jsme změnili. Nyní se znovu přihlaste.');
 		$this->user->logout(TRUE);
@@ -63,7 +63,7 @@ class UserPresenter extends BasePresenter
 	private function getLoggedUser():User
 	{
 		$id = $this->getUser()->getIdentity()->getId();
-		return $this->userFacade->find($id);
+		return $this->users->find($id);
 	}
 
 }

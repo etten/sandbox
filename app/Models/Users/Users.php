@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Facade;
+namespace App\Models\Users;
 
-use App\Models\Users\User;
+use Etten\Doctrine\Facade;
 
-class UserFacade extends Facade
+class Users extends Facade
 {
 
 	/**

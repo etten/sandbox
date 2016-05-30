@@ -2,25 +2,22 @@
 
 namespace App\Models\Users\Console;
 
-use App\Facade\UserFacade;
-use App\Models\Users\User;
+use App\Models\Users;
 use Symfony\Component\Console;
-use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Output\OutputInterface;
 
 class UserCommand extends Console\Command\Command
 {
 
-	/** @var UserFacade */
-	private $userFacade;
+	/** @var Users\Users */
+	private $users;
 
-	public function __construct(UserFacade $userFacade)
+	public function __construct(Users\Users $users)
 	{
 		parent::__construct('user:create');
-		$this->userFacade = $userFacade;
+		$this->users = $users;
 	}
 
-	protected function execute(InputInterface $input, OutputInterface $output)
+	protected function execute(Console\Input\InputInterface $input, Console\Output\OutputInterface $output)
 	{
 		/** @var Console\Helper\QuestionHelper $helper */
 		$helper = $this->getHelper('question');
@@ -33,8 +30,8 @@ class UserCommand extends Console\Command\Command
 		$question->setHiddenFallback(FALSE);
 		$password = $helper->ask($input, $output, $question);
 
-		$user = new User($username, $password);
-		$this->userFacade->save($user);
+		$user = new Users\User($username, $password);
+		$this->users->save($user);
 
 		$output->writeln(sprintf('User %s was created.', $username));
 	}

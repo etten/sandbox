@@ -2,19 +2,18 @@
 
 namespace App\Models\Users;
 
-use App\Facade\UserFacade;
 use Nette\Security;
 use Nette\Utils;
 
 class Authenticator implements Security\IAuthenticator
 {
 
-	/** @var UserFacade */
-	private $userFacade;
+	/** @var Users */
+	private $users;
 
-	public function __construct(UserFacade $userFacade)
+	public function __construct(Users $users)
 	{
-		$this->userFacade = $userFacade;
+		$this->users = $users;
 	}
 
 	/**
@@ -27,7 +26,7 @@ class Authenticator implements Security\IAuthenticator
 	{
 		list($username, $password) = $credentials;
 
-		$user = $this->userFacade->findOneByUsername($username);
+		$user = $this->users->findOneByUsername($username);
 		if (!$user) {
 			throw new Security\AuthenticationException('User was not found.', self::IDENTITY_NOT_FOUND);
 		}
@@ -45,7 +44,7 @@ class Authenticator implements Security\IAuthenticator
 	{
 		if ($user->needsRehash()) {
 			$user->setPassword($password);
-			$this->userFacade->save($user);
+			$this->users->save($user);
 		}
 	}
 

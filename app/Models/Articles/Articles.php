@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Facade;
+namespace App\Models\Articles;
 
-use App\Models\Articles;
 use App\Models\Routes\Route;
 use Doctrine\ORM;
+use Etten\Doctrine\Facade;
 
-class ArticleFacade extends Facade
+class Articles extends Facade
 {
 
 	/**
 	 * @param Route $route
-	 * @return Articles\Article|null
+	 * @return Article|null
 	 */
 	public function findOneByRoute(Route $route)
 	{
@@ -26,7 +26,7 @@ class ArticleFacade extends Facade
 	{
 		return $this->createQueryBuilder()
 			->select('a, ar')
-			->from(Articles\Article::class, 'a')
+			->from(Article::class, 'a')
 			->join('a.route', 'ar');
 	}
 

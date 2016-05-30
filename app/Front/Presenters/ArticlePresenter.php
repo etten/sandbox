@@ -2,20 +2,20 @@
 
 namespace App\Front\Presenters;
 
-use App\Facade\ArticleFacade;
+use App\Models\Articles\Articles;
 
 class ArticlePresenter extends RoutePresenter
 {
 
 	/**
-	 * @var ArticleFacade
+	 * @var Articles
 	 * @inject
 	 */
-	public $articleFacade;
+	public $articles;
 
 	public function renderDefault()
 	{
-		$this->template->article = $article = $this->articleFacade->findOneByRoute($this->route);
+		$this->template->article = $article = $this->articles->findOneByRoute($this->route);
 	}
 
 }
