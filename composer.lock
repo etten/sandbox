@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "467c042cbb4d9fee60a8f3b1f9fe82b1",
-    "content-hash": "e9c7aa7e3f0f28711cb2f7eb9350eb23",
+    "hash": "fc4766063e544d8811c7381c7a3cb835",
+    "content-hash": "3de3e66ca2de614635d3974fb8b678a3",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -710,16 +710,16 @@
         },
         {
             "name": "etten/doctrine",
-            "version": "v2.3.1",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/doctrine.git",
-                "reference": "97d66862710c9552ae112dcb2eb67ace2c7147b4"
+                "reference": "e61c258ad4bc4fabd3020faffc3f833e87230779"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/doctrine/zipball/97d66862710c9552ae112dcb2eb67ace2c7147b4",
-                "reference": "97d66862710c9552ae112dcb2eb67ace2c7147b4",
+                "url": "https://api.github.com/repos/etten/doctrine/zipball/e61c258ad4bc4fabd3020faffc3f833e87230779",
+                "reference": "e61c258ad4bc4fabd3020faffc3f833e87230779",
                 "shasum": ""
             },
             "require": {
@@ -756,7 +756,7 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2016-05-27 09:35:10"
+            "time": "2016-05-30 06:12:12"
         },
         {
             "name": "etten/migrations",
@@ -2815,16 +2815,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "3.3.2",
+            "version": "3.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "4862dac433cbdb4438b593fa7f79e07559ba157e"
+                "reference": "44cd8e3930e431658d1a5de7d282d5cb37837fd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/4862dac433cbdb4438b593fa7f79e07559ba157e",
-                "reference": "4862dac433cbdb4438b593fa7f79e07559ba157e",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/44cd8e3930e431658d1a5de7d282d5cb37837fd5",
+                "reference": "44cd8e3930e431658d1a5de7d282d5cb37837fd5",
                 "shasum": ""
             },
             "require": {
@@ -2874,7 +2874,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-05-25 06:48:21"
+            "time": "2016-05-27 16:24:29"
         },
         {
             "name": "phpunit/php-file-iterator",

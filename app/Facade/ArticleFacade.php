@@ -4,7 +4,7 @@ namespace App\Facade;
 
 use App\Models\Articles;
 use App\Models\Routes\Route;
-use Kdyby\Doctrine;
+use Doctrine\ORM;
 
 class ArticleFacade extends Facade
 {
@@ -22,7 +22,7 @@ class ArticleFacade extends Facade
 			->getOneOrNullResult();
 	}
 
-	private function createJoinedQueryBuilder():Doctrine\QueryBuilder
+	private function createJoinedQueryBuilder():ORM\QueryBuilder
 	{
 		return $this->createQueryBuilder()
 			->select('a, ar')
