@@ -85,6 +85,9 @@ if (!is_file('app/config/config.local.neon')) {
 	copy('app/config/config.local.neon.dist', 'app/config/config.local.neon');
 	copy('tests/config.local.neon.dist', 'tests/config.local.neon');
 
+	// Generate secret token
+	$data['developer-token'] = bin2hex(random_bytes(20));
+
 	$data = array_filter($data, 'strlen');
 	InstallHelpers::setupConfig($data);
 }
