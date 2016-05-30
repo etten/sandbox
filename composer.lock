@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fc4766063e544d8811c7381c7a3cb835",
-    "content-hash": "3de3e66ca2de614635d3974fb8b678a3",
+    "hash": "0da659929647ff88aa84a6ca363be9a7",
+    "content-hash": "ea1ea6fdc3c1a73b039704de1a143538",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -608,16 +608,16 @@
         },
         {
             "name": "etten/app",
-            "version": "v2.3.4",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/app.git",
-                "reference": "2104d28aa4681c606b6752ee3a0370c2d52b3c80"
+                "reference": "6c1ad20f3e1f400c89dc59668ad89b87671eec41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/app/zipball/2104d28aa4681c606b6752ee3a0370c2d52b3c80",
-                "reference": "2104d28aa4681c606b6752ee3a0370c2d52b3c80",
+                "url": "https://api.github.com/repos/etten/app/zipball/6c1ad20f3e1f400c89dc59668ad89b87671eec41",
+                "reference": "6c1ad20f3e1f400c89dc59668ad89b87671eec41",
                 "shasum": ""
             },
             "require": {
@@ -656,7 +656,7 @@
                 "bootstrap",
                 "nette"
             ],
-            "time": "2016-05-03 12:59:47"
+            "time": "2016-05-30 08:24:14"
         },
         {
             "name": "etten/deployment",
@@ -3780,16 +3780,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.0.6",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "0047c8366744a16de7516622c5b7355336afae96"
+                "reference": "eca51b7b65eb9be6af88ad7cc91685f1556f5c9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/0047c8366744a16de7516622c5b7355336afae96",
-                "reference": "0047c8366744a16de7516622c5b7355336afae96",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/eca51b7b65eb9be6af88ad7cc91685f1556f5c9a",
+                "reference": "eca51b7b65eb9be6af88ad7cc91685f1556f5c9a",
                 "shasum": ""
             },
             "require": {
@@ -3798,7 +3798,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -3825,7 +3825,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-03-04 07:55:57"
+            "time": "2016-05-26 21:46:24"
         }
     ],
     "aliases": [],
