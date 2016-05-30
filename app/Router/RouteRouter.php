@@ -3,10 +3,8 @@
 namespace App\Router;
 
 use App\Models\Routes;
-use Doctrine\DBAL\Exception\TableNotFoundException;
-use Kdyby\Doctrine\EntityManager;
-use Nette;
 use Nette\Application;
+use Nette\Http;
 
 class RouteRouter implements Application\IRouter
 {
@@ -17,22 +15,22 @@ class RouteRouter implements Application\IRouter
 	/** @var array */
 	private $presenterMap = [];
 
-	/** @var EntityManager */
-	private $em;
+	/** @var Routes\Routes */
+	private $routes;
 
-	public function __construct(array $map, EntityManager $em)
+	public function __construct(array $map, Routes\Routes $routes)
 	{
 		$this->typeMap = $map;
 		$this->presenterMap = array_flip($this->typeMap);
-		$this->em = $em;
+		$this->routes = $routes;
 	}
 
 	/**
 	 * Maps HTTP request to a Request object.
-	 * @param Nette\Http\IRequest $httpRequest
+	 * @param Http\IRequest $httpRequest
 	 * @return Application\Request|NULL
 	 */
-	public function match(Nette\Http\IRequest $httpRequest)
+	public function match(Http\IRequest $httpRequest)
 	{
 		$url = $httpRequest->getUrl();
 		$urlPath = ltrim($url->getPath(), '/');
@@ -62,7 +60,7 @@ class RouteRouter implements Application\IRouter
 			$httpRequest->getPost(),
 			$httpRequest->getFiles(),
 			[
-				Nette\Application\Request::SECURED => $httpRequest->isSecured(),
+				Application\Request::SECURED => $httpRequest->isSecured(),
 			]
 		);
 	}
@@ -70,10 +68,10 @@ class RouteRouter implements Application\IRouter
 	/**
 	 * Constructs absolute URL from Request object.
 	 * @param Application\Request $appRequest
-	 * @param Nette\Http\Url $refUrl
+	 * @param Http\Url $refUrl
 	 * @return NULL|string
 	 */
-	public function constructUrl(Application\Request $appRequest, Nette\Http\Url $refUrl)
+	public function constructUrl(Application\Request $appRequest, Http\Url $refUrl)
 	{
 		$route = $appRequest->getParameter('route');
 
@@ -83,7 +81,7 @@ class RouteRouter implements Application\IRouter
 			// unset router-specific parameters
 			unset($parameters['action'], $parameters['route']);
 
-			$newUrl = new Nette\Http\Url($refUrl->getBaseUrl() . $route->getUrl());
+			$newUrl = new Http\Url($refUrl->getBaseUrl() . $route->getUrl());
 			$newUrl->setQuery($parameters);
 
 			return $newUrl->getAbsoluteUrl();
@@ -98,11 +96,10 @@ class RouteRouter implements Application\IRouter
 	 */
 	private function safeFindRoute(string $url)
 	{
-		$repository = $this->em->getRepository(Routes\Route::class);
-
 		try {
-			return $repository->findOneBy(['url' => $url]);
-		} catch (TableNotFoundException $e) {
+			return $this->routes->findOneByUrl($url);
+		} catch (\Throwable $e) {
+			// Table must not exist or something go wrong...
 			return NULL;
 		}
 	}
