@@ -40,6 +40,7 @@ extensions:
 	etten.cleaner: Etten\App\DI\CleanerExtension
 	etten.migrations: Etten\Migrations\Bridges\NetteDI\MigrationsExtension
 	etten.deployment: Etten\Deployment\NetteExtension\DeploymentExtension
+	etten.doctrine: Etten\Doctrine\DI\DIExtension
 	etten.doctrine.uuid: Etten\Doctrine\DI\UuidExtension
 
 
