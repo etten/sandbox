@@ -19,7 +19,7 @@ install:
   - mysql -e 'create database test;'
 
   # Composer
-  - composer install --no-interaction --prefer-dist
+  - composer install --no-interaction --prefer-dist --optimize-autoloader
 
   # Bower
   - bower install --allow-root --config.interactive=false
