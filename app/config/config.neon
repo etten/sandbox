@@ -15,6 +15,7 @@ application:
 	mapping:
 		*: App\*\Presenters\*Presenter
 
+	scanComposer: no # scanDirs only, not every file is deployed
 
 nette:
 	container:
