@@ -1,6 +1,10 @@
 parameters:
 
 
+application:
+	scanDirs: no # This prevents DIC rebuild when whatever Presenter is changed.
+
+
 kdyby.doctrine:
 	user: #<database-user>
 	password: #<database-password>
