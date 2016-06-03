@@ -2,7 +2,9 @@ parameters:
 
 
 application:
-	scanDirs: no # This prevents DIC rebuild when whatever Presenter is changed.
+	# This prevents DIC rebuilds on local (development).
+	scanDirs: no
+	scanComposer: no
 
 
 kdyby.doctrine:
