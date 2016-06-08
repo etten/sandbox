@@ -11,10 +11,10 @@ on security and performance and is definitely one of the safest PHP frameworks.
 
 ## Requirements
 
-* PHP 7.0 or newer
+* [PHP 7.0+](https://secure.php.net/)
 * [Composer installed](https://getcomposer.org/)
-* Apache server, mod_rewrite enabled
-* APCu extension *(required for Doctrine Cache; can be omitted, see [config](app/config/config.neon))*
+* [Apache HTTP Server](https://httpd.apache.org/), [mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) enabled
+* [APCu extension](http://php.net/manual/en/book.apcu.php) *(required for Doctrine Cache; can be omitted, see [config](app/config/config.neon))*
 
 ## Installing
 
