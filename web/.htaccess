@@ -1,11 +1,11 @@
 # Apache configuration file (see httpd.apache.org/docs/current/mod/quickreference.html)
 
-# disable directory listing
+# Disable directory listing
 <IfModule mod_autoindex.c>
 	Options -Indexes
 </IfModule>
 
-# enable cool URL
+# Enable cool URL
 <IfModule mod_rewrite.c>
 	RewriteEngine On
 
@@ -22,7 +22,6 @@
 #	# Redirect to NON www.*
 #	RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 #	RewriteRule (.*) http://%1/$1 [R=301,L,QSA,NE]
-
 
 	# Forcing HTTPS
 	# Warning: Don't forget set other rules protocol and application config!
@@ -64,7 +63,6 @@
 	# Front controller
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteRule .* index.php [L]
-
 </IfModule>
 
 # Define mime types
