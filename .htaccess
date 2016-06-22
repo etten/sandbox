@@ -7,22 +7,3 @@
 	# See https://httpd.apache.org/docs/2.2/rewrite/flags.html#page-header
 	RewriteRule ^(.*)$ %{ENV:BASE}web/$1 [QSA,L]
 </IfModule>
-
-<IfModule mod_php5.c>
-# Custom php.ini values for PHP as Apache module.
-# Don't forget set the same also in .user.ini (for PHP as CGI/FCGI/FPM).
-
-	php_value memory_limit 128M
-	php_value max_execution_time 60
-
-	php_value upload_max_filesize 100M
-	php_value post_max_size 100M
-</IfModule>
-
-# Allow access only from specific IPs
-#SetEnvIf Remote_Addr "^XXX.XXX.XXX.XXX$" goodIp # me home
-#SetEnvIf Remote_Addr "^XXX.XXX.XXX.XXX$" goodIp # server (necessary eg. for CRON)
-#SetEnvIf Remote_Addr "^127.0.0.1$" goodIp # localhost
-#Order deny,allow
-#Deny from all
-#Allow from env=goodIp
