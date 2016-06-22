@@ -10,12 +10,18 @@ php:
 	date.timezone: Europe/Prague
 
 
+http:
+	headers:
+		X-Powered-By: "Etten\App, Nette Framework"
+
+
 application:
 	errorPresenter: Front:Error
 	mapping:
 		*: App\*\Presenters\*Presenter
 
 	scanComposer: no # scanDirs only, not every file is deployed
+
 
 nette:
 	container:

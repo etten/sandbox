@@ -1,10 +1,5 @@
 # Apache configuration file (see httpd.apache.org/docs/current/mod/quickreference.html)
 
-# Disable directory listing
-<IfModule mod_autoindex.c>
-	Options -Indexes
-</IfModule>
-
 # Enable cool URL
 <IfModule mod_rewrite.c>
 	RewriteEngine On
@@ -65,6 +60,38 @@
 	RewriteRule .* index.php [L]
 </IfModule>
 
+# Disable directory listing
+<IfModule mod_autoindex.c>
+	Options -Indexes
+</IfModule>
+
+# Send additional headers
+#
+# WARNING:
+# THIS MAY NOT WORK WHEN RUN PHP-FPM/FASTCGI.
+# IN THIS CASE RATHER SET THESE APACHE DIRECTIVES IN YOUR VHOST CONFIGURATION.
+<IfModule mod_headers.c>
+	# Basic performance improvements
+	Header always set Connection Keep-Alive
+
+	# Make sure proxies don't deliver the wrong content
+	Header append Vary User-Agent env=!dont-vary
+
+	# HSTS for a 1 year (31536000 seconds = 1 year); https://hstspreload.appspot.com
+	Header edit Set-Cookie ^(.*)$ $1;HttpOnly;Secure
+	Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+	# Prevent mime based attacks
+	Header always set X-Content-Type-Options nosniff
+
+#	# Allow custom origin for additional resources
+#	SetEnvIf Origin "^http(s)?://(www\.)?(example\.com|example\.org)$" AccessControlAllowOrigin=$0
+#	Header always set Access-Control-Allow-Origin %{AccessControlAllowOrigin}e env=AccessControlAllowOrigin
+
+#	# Content-Security-Policy (https://report-uri.io/home/generate)
+#	Header always set Content-Security-Policy-Report-Only "default-src 'self' 'unsafe-inline' data: *; form-action 'self'; report-uri https://report-uri.io/report/<ID>/reportOnly; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com *.googleadservices.com *.google.com *.googleapis.com *.youtube.com *.ytimg.com c.imedia.cz *.twitter.com *.twimg.com *.facebook.net *.facebook.com *.monkeytracker.cz *.zopim.com *.heureka.cz *.heureka.sk;"
+</IfModule>
+
 # Define mime types
 <IfModule mod_mime.c>
 	AddType text/plain .txt
@@ -119,33 +146,7 @@
 	BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 </IfModule>
 
-<IfModule mod_headers.c>
-	# Do not forget set app/config/config.neon !
-
-	# Basic performance improvements
-	Header set Connection Keep-Alive
-
-	# Make sure proxies don't deliver the wrong content
-	Header append Vary User-Agent env=!dont-vary
-
-	# System subscription
-	Header set X-Powered-By "Etten\App, Nette Framework"
-
-	# HSTS for a 1 year (31536000 seconds = 1 year); https://hstspreload.appspot.com
-	Header edit Set-Cookie ^(.*)$ $1;HttpOnly;Secure
-	Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
-
-	# Prevent mime based attacks
-	Header always set X-Content-Type-Options nosniff
-
-#	# Allow custom origin for additional resources
-#	SetEnvIf Origin "^http(s)?://(www\.)?(example\.com|example\.org)$" AccessControlAllowOrigin=$0
-#	Header set Access-Control-Allow-Origin %{AccessControlAllowOrigin}e env=AccessControlAllowOrigin
-
-#	# Content-Security-Policy (https://report-uri.io/home/generate)
-#	Header set Content-Security-Policy-Report-Only "default-src 'self' 'unsafe-inline' data: *; form-action 'self'; report-uri https://report-uri.io/report/<ID>/reportOnly; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com *.googleadservices.com *.google.com *.googleapis.com *.youtube.com *.ytimg.com c.imedia.cz *.twitter.com *.twimg.com *.facebook.net *.facebook.com *.monkeytracker.cz *.zopim.com *.heureka.cz *.heureka.sk;"
-</IfModule>
-
+# Set browser caching rules
 <IfModule mod_expires.c>
 	ExpiresActive on
 
