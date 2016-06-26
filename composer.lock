@@ -608,16 +608,16 @@
         },
         {
             "name": "etten/app",
-            "version": "v2.4.1",
+            "version": "v2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/app.git",
-                "reference": "162630fb691fd8b55bbe62c22dd499d4b659c425"
+                "reference": "41cc8634fbd0cb53ca0ab18773fb44c79d5f4b8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/app/zipball/162630fb691fd8b55bbe62c22dd499d4b659c425",
-                "reference": "162630fb691fd8b55bbe62c22dd499d4b659c425",
+                "url": "https://api.github.com/repos/etten/app/zipball/41cc8634fbd0cb53ca0ab18773fb44c79d5f4b8a",
+                "reference": "41cc8634fbd0cb53ca0ab18773fb44c79d5f4b8a",
                 "shasum": ""
             },
             "require": {
@@ -656,7 +656,7 @@
                 "bootstrap",
                 "nette"
             ],
-            "time": "2016-06-01 08:58:32"
+            "time": "2016-06-26 12:27:30"
         },
         {
             "name": "etten/deployment",
@@ -1844,26 +1844,32 @@
         },
         {
             "name": "nette/neon",
-            "version": "v2.3.5",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/neon.git",
-                "reference": "75699de201932e6de6b249824dc8c53d0f442cd5"
+                "reference": "c40c63f2afa4196844ac40d9d2a2cfb313f76906"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/neon/zipball/75699de201932e6de6b249824dc8c53d0f442cd5",
-                "reference": "75699de201932e6de6b249824dc8c53d0f442cd5",
+                "url": "https://api.github.com/repos/nette/neon/zipball/c40c63f2afa4196844ac40d9d2a2cfb313f76906",
+                "reference": "c40c63f2afa4196844ac40d9d2a2cfb313f76906",
                 "shasum": ""
             },
             "require": {
                 "ext-iconv": "*",
-                "php": ">=5.3.1"
+                "php": ">=5.6.0"
             },
             "require-dev": {
-                "nette/tester": "~1.4"
+                "nette/tester": "~2.0",
+                "tracy/tracy": "^2.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1887,7 +1893,7 @@
             ],
             "description": "Nette NEON: parser & generator for Nette Object Notation",
             "homepage": "http://ne-on.org",
-            "time": "2016-05-17 17:14:44"
+            "time": "2016-06-25 13:59:48"
         },
         {
             "name": "nette/php-generator",
