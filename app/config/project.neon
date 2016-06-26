@@ -2,10 +2,10 @@ services:
 	- App\Forms\FormFactory
 	- App\Forms\SignInFormFactory
 
-	- App\Models\Articles\Articles
-
 	- App\Models\Users\Users
 	- App\Models\Users\Authenticator
+
+	- App\Models\Articles\Articles
 
 
 tracy:
