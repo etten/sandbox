@@ -21,6 +21,7 @@ class Authenticator implements Security\IAuthenticator
 	 * and returns IIdentity on success or throws AuthenticationException
 	 * @param array $credentials
 	 * @return Security\IIdentity
+	 * @throws Security\AuthenticationException
 	 */
 	public function authenticate(array $credentials)
 	{
