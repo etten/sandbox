@@ -71,7 +71,7 @@ class Route extends Entity
 	 */
 	public function setUrl(string $url)
 	{
-		$this->url = RouteHelpers::webalize($url, '/');
+		$this->url = RouteHelpers::webalize($url, '/.');
 		return $this;
 	}
 
