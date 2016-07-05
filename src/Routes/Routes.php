@@ -5,7 +5,7 @@
  * Copyright © 2016 Jaroslav Hranička <hranicka@outlook.com>
  */
 
-namespace App\Models\Routes;
+namespace Project\Routes;
 
 use Etten\Doctrine\Facade;
 

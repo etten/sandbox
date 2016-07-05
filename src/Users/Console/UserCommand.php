@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Models\Users\Console;
+namespace Project\Users\Console;
 
-use App\Models\Users;
+use Project\Users;
 use Symfony\Component\Console;
 
 class UserCommand extends Console\Command\Command

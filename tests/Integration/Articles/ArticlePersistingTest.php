@@ -2,9 +2,9 @@
 
 namespace Tests\Integration\Articles;
 
-use App\Models\Articles;
-use App\Models\Routes;
 use Etten\App\Tests\DoctrineTestCase;
+use Project\Articles;
+use Project\Routes;
 
 class ArticlePersistingTest extends DoctrineTestCase
 {

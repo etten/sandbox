@@ -2,10 +2,10 @@ services:
 	- App\Forms\FormFactory
 	- App\Forms\SignInFormFactory
 
-	- App\Models\Users\Users
-	- App\Models\Users\Authenticator
+	- Project\Users\Users
+	- Project\Users\Authenticator
 
-	- App\Models\Articles\Articles
+	- Project\Articles\Articles
 
 
 tracy:
@@ -14,4 +14,4 @@ tracy:
 
 kdyby.console:
 	commands:
-		- App\Models\Users\Console\UserCommand
+		- Project\Users\Console\UserCommand

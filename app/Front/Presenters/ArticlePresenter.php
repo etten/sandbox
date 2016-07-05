@@ -2,13 +2,13 @@
 
 namespace App\Front\Presenters;
 
-use App\Models\Articles\Articles;
+use Project\Articles;
 
 class ArticlePresenter extends RoutePresenter
 {
 
 	/**
-	 * @var Articles
+	 * @var Articles\Articles
 	 * @inject
 	 */
 	public $articles;

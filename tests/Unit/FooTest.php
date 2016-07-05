@@ -2,14 +2,14 @@
 
 namespace Tests\Unit;
 
-use Etten\Sandbox;
+use Project\Foo;
 
 class FooTest extends \PHPUnit_Framework_TestCase
 {
 
 	public function testGetBar()
 	{
-		$foo = new Sandbox\Foo();
+		$foo = new Foo();
 		$this->assertSame('bar', $foo->getBar());
 	}
 

@@ -7,15 +7,14 @@
 
 namespace App\Admin\Presenters;
 
-use App\Models\Users\User;
-use App\Models\Users\Users;
 use Nette\Application\UI\Form;
+use Project\Users;
 
 class UserPresenter extends BasePresenter
 {
 
 	/**
-	 * @var Users
+	 * @var Users\Users
 	 * @inject
 	 */
 	public $users;
@@ -60,7 +59,7 @@ class UserPresenter extends BasePresenter
 		$this->redirect('Sign:in');
 	}
 
-	private function getLoggedUser():User
+	private function getLoggedUser():Users\User
 	{
 		$id = $this->getUser()->getIdentity()->getId();
 		return $this->users->find($id);

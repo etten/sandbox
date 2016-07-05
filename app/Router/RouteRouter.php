@@ -2,7 +2,7 @@
 
 namespace App\Router;
 
-use App\Models\Routes;
+use Project\Routes;
 use Nette\Application;
 use Nette\Http;
 

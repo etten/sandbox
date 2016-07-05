@@ -1,6 +1,6 @@
 <?php
 
-namespace Etten\Sandbox;
+namespace Project;
 
 class Foo
 {

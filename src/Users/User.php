@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Users;
+namespace Project\Users;
 
 use Doctrine\ORM;
 use Etten\Doctrine\Entities\Attributes\Id;

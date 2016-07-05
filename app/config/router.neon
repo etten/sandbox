@@ -5,7 +5,7 @@ parameters:
 
 
 services:
-	- App\Models\Routes\Routes
+	- Project\Routes\Routes
 
 	router.factory: App\Router\RouterFactory(%https%, App\Router\RouteRouter(%router%))
 	router: @router.factory::create

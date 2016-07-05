@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Models\Articles;
+namespace Project\Articles;
 
-use App\Models\Routes\Route;
 use Doctrine\ORM;
 use Etten\Doctrine\Entities\Attributes\Id;
 use Etten\Doctrine\Entities\Entity;
+use Project\Routes;
 
 /**
  * @ORM\Mapping\Entity()
@@ -22,8 +22,8 @@ class Article extends Entity
 	private $name = '';
 
 	/**
-	 * @var Route
-	 * @ORM\Mapping\OneToOne(targetEntity="\App\Models\Routes\Route", cascade={"persist", "remove"})
+	 * @var Routes\Route
+	 * @ORM\Mapping\OneToOne(targetEntity="\Project\Routes\Route", cascade={"persist", "remove"})
 	 * @ORM\Mapping\JoinColumn(nullable=false)
 	 */
 	private $route;
@@ -47,18 +47,18 @@ class Article extends Entity
 	}
 
 	/**
-	 * @return Route
+	 * @return Routes\Route
 	 */
-	public function getRoute():Route
+	public function getRoute():Routes\Route
 	{
 		return $this->route;
 	}
 
 	/**
-	 * @param Route $route
+	 * @param Routes\Route $route
 	 * @return $this
 	 */
-	public function setRoute(Route $route)
+	public function setRoute(Routes\Route $route)
 	{
 		$this->route = $route;
 		return $this;

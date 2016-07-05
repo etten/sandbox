@@ -1,5 +1,6 @@
 parameters:
 	appDir: %rootDir%/app
+	srcDir: %rootDir%/src
 	logDir: %rootDir%/log
 	storageDir: %rootDir%/storage
 	tempDir: %rootDir%/temp

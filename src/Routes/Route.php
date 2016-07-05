@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Routes;
+namespace Project\Routes;
 
 use Doctrine\ORM;
 use Etten\Doctrine\Entities\Attributes\Id;

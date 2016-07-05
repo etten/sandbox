@@ -41,8 +41,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Etten\\Sandbox\\": "src/",
             "App\\": "app/",
+            "Project\\": "src/",
             "Tests\\": "tests/"
         }
     }

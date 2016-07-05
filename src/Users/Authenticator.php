@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Users;
+namespace Project\Users;
 
 use Nette\Security;
 use Nette\Utils;

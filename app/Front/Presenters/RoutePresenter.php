@@ -2,14 +2,14 @@
 
 namespace App\Front\Presenters;
 
-use App\Models\Routes\Route;
+use Project\Routes;
 use Nette\Application\BadRequestException;
 
 abstract class RoutePresenter extends BasePresenter
 {
 
 	/**
-	 * @var Route
+	 * @var Routes\Route
 	 * @persistent
 	 */
 	public $route;
@@ -18,7 +18,7 @@ abstract class RoutePresenter extends BasePresenter
 	{
 		parent::startup();
 
-		if (!($this->route && $this->route instanceof Route)) {
+		if (!($this->route && $this->route instanceof Routes\Route)) {
 			throw new BadRequestException('Cannot load ' . __CLASS__ . ' without Route parameter.');
 		}
 	}

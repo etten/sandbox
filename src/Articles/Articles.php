@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Models\Articles;
+namespace Project\Articles;
 
-use App\Models\Routes\Route;
 use Doctrine\ORM;
 use Etten\Doctrine\Facade;
+use Project\Routes;
 
 class Articles extends Facade
 {
 
 	/**
-	 * @param Route $route
+	 * @param Routes\Route $route
 	 * @return Article|null
 	 */
-	public function findOneByRoute(Route $route)
+	public function findOneByRoute(Routes\Route $route)
 	{
 		return $this->createJoinedQueryBuilder()
 			->where('a.route = :route')

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Users;
+namespace Project\Users;
 
 use Etten\Doctrine\Facade;
 
@@ -15,6 +15,16 @@ class Users extends Facade
 	{
 		return $this->getRepository(User::class)
 			->findOneBy(['username' => $username]);
+	}
+
+	/**
+	 * @param mixed $id
+	 * @return null|User
+	 */
+	public function find($id)
+	{
+		return $this->getRepository(User::class)
+			->find($id);
 	}
 
 	public function save(User $user)

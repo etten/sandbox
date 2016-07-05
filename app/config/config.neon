@@ -73,7 +73,7 @@ kdyby.doctrine:
 
 	defaultRepositoryClassName: Kdyby\Doctrine\EntityRepository
 	metadata:
-		App: %appDir%
+		Project: %srcDir%
 
 
 etten.migrations:
