@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cf12aa1d0924b073374e2c9b0713c3b0",
-    "content-hash": "6f82c24a0f599962a7f3b4a3822ae99f",
+    "hash": "d84b00783719cc5d403e21e417e96c6e",
+    "content-hash": "8db03b4a2a667138a25b54c5cf272658",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1680,22 +1680,22 @@
         },
         {
             "name": "nette/forms",
-            "version": "v2.3.9",
+            "version": "v2.3.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/forms.git",
-                "reference": "e32577062a2544fedac8a95fbc393ab98a3291c7"
+                "reference": "22ab1e9794fabe225b980ee4c31f57ee5b7f74e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/forms/zipball/e32577062a2544fedac8a95fbc393ab98a3291c7",
-                "reference": "e32577062a2544fedac8a95fbc393ab98a3291c7",
+                "url": "https://api.github.com/repos/nette/forms/zipball/22ab1e9794fabe225b980ee4c31f57ee5b7f74e2",
+                "reference": "22ab1e9794fabe225b980ee4c31f57ee5b7f74e2",
                 "shasum": ""
             },
             "require": {
                 "nette/component-model": "~2.2.0",
                 "nette/http": "~2.2",
-                "nette/utils": "~2.2",
+                "nette/utils": "~2.3.10",
                 "php": ">=5.3.1"
             },
             "conflict": {
@@ -1731,7 +1731,7 @@
             ],
             "description": "Nette Forms: greatly facilitates web forms",
             "homepage": "https://nette.org",
-            "time": "2016-05-17 15:35:20"
+            "time": "2016-06-30 18:22:11"
         },
         {
             "name": "nette/http",
@@ -3890,16 +3890,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.1.1",
+            "version": "v3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "c5a7e7fc273c758b92b85dcb9c46149ccda89623"
+                "reference": "2884c26ce4c1d61aebf423a8b912950fe7c764de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/c5a7e7fc273c758b92b85dcb9c46149ccda89623",
-                "reference": "c5a7e7fc273c758b92b85dcb9c46149ccda89623",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/2884c26ce4c1d61aebf423a8b912950fe7c764de",
+                "reference": "2884c26ce4c1d61aebf423a8b912950fe7c764de",
                 "shasum": ""
             },
             "require": {
@@ -3935,7 +3935,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-14 11:18:07"
+            "time": "2016-06-29 05:41:56"
         },
         {
             "name": "webmozart/assert",
