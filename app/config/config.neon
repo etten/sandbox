@@ -55,21 +55,10 @@ kdyby.console:
 	disabled: no # always load all commands, not only in a CLI mode
 
 
-kdyby.annotations:
-	# remove when you don't have APCu enabled
-	cache: Doctrine\Common\Cache\ApcuCache
-
-
 kdyby.doctrine:
 	user:
 	password:
 	dbname:
-
-	# remove when you don't have APCu enabled
-	metadataCache: Doctrine\Common\Cache\ApcuCache
-	queryCache: Doctrine\Common\Cache\ApcuCache
-	resultCache: Doctrine\Common\Cache\ApcuCache
-	hydrationCache: Doctrine\Common\Cache\ApcuCache
 
 	defaultRepositoryClassName: Kdyby\Doctrine\EntityRepository
 	metadata:
