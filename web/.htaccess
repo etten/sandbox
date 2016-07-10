@@ -33,11 +33,11 @@
 	# redirect to www.*
 	RewriteCond %{HTTP_HOST} !^www [NC]
 	RewriteCond %{HTTP_HOST} !(.*)\.(.*)\.(.*) [NC] # not for 3rd level domains
-	RewriteRule (www)?(.*) http://www.%{HTTP_HOST}/$2 [R=301,L,QSA,NE]
+	RewriteRule (www)?(.*) https://www.%{HTTP_HOST}/$2 [R=301,L,QSA,NE]
 
 #	# Redirect to NON www.*
 #	RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-#	RewriteRule (.*) http://%1/$1 [R=301,L,QSA,NE]
+#	RewriteRule (.*) https://%1/$1 [R=301,L,QSA,NE]
 
 	# Prevents files starting with dot to be viewed by browser
 	RewriteRule /\.|^\. - [F]
