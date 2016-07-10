@@ -9,15 +9,6 @@
 	RewriteCond %{REQUEST_URI} ^/web/
 	RewriteRule (.*) /$1 [R=301,L,QSA,NE]
 
-	# redirect to www.*
-	RewriteCond %{HTTP_HOST} !^www [NC]
-	RewriteCond %{HTTP_HOST} !(.*)\.(.*)\.(.*) [NC] # not for 3rd level domains
-	RewriteRule (www)?(.*) http://www.%{HTTP_HOST}/$2 [R=301,L,QSA,NE]
-
-#	# Redirect to NON www.*
-#	RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-#	RewriteRule (.*) http://%1/$1 [R=301,L,QSA,NE]
-
 	# Forcing HTTPS
 	# Warning: Don't forget set other rules protocol and application config!
 	# Warning: When using CloudFlare or another proxy, setup HTTPS redirect rules there!
@@ -38,6 +29,15 @@
 #	RewriteCond %{THE_REQUEST} !^[A-Z]+\ /admin/.*
 #	RewriteCond %{REQUEST_FILENAME} !-f
 #	RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1 [R=301,NE,L]
+
+	# redirect to www.*
+	RewriteCond %{HTTP_HOST} !^www [NC]
+	RewriteCond %{HTTP_HOST} !(.*)\.(.*)\.(.*) [NC] # not for 3rd level domains
+	RewriteRule (www)?(.*) http://www.%{HTTP_HOST}/$2 [R=301,L,QSA,NE]
+
+#	# Redirect to NON www.*
+#	RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+#	RewriteRule (.*) http://%1/$1 [R=301,L,QSA,NE]
 
 	# Prevents files starting with dot to be viewed by browser
 	RewriteRule /\.|^\. - [F]
