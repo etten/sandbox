@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "16fe0b95bd86e6eb5d8bcb9f28b7408a",
-    "content-hash": "8db03b4a2a667138a25b54c5cf272658",
+    "hash": "adc4d606681d95b309f253d82b7a6061",
+    "content-hash": "f7fd334842b1e25684d4469cc8d46c18",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -710,16 +710,16 @@
         },
         {
             "name": "etten/doctrine",
-            "version": "v2.10.1",
+            "version": "v2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/doctrine.git",
-                "reference": "c7653174d0df686033b1a5c41473639a2b760e7c"
+                "reference": "560175e00e4292f9cd0bf93b40b3bea795292bed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/doctrine/zipball/c7653174d0df686033b1a5c41473639a2b760e7c",
-                "reference": "c7653174d0df686033b1a5c41473639a2b760e7c",
+                "url": "https://api.github.com/repos/etten/doctrine/zipball/560175e00e4292f9cd0bf93b40b3bea795292bed",
+                "reference": "560175e00e4292f9cd0bf93b40b3bea795292bed",
                 "shasum": ""
             },
             "require": {
@@ -756,7 +756,7 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2016-07-05 10:51:31"
+            "time": "2016-07-12 17:25:14"
         },
         {
             "name": "etten/migrations",
@@ -861,16 +861,16 @@
         },
         {
             "name": "kdyby/annotations",
-            "version": "v2.3.0",
+            "version": "v2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Annotations.git",
-                "reference": "36cb90e8a28c1f9a23a5c351af2449139c21229d"
+                "reference": "12e64d6b5e1b49dde3f3fc3bfbcc074c9f688fe7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Annotations/zipball/36cb90e8a28c1f9a23a5c351af2449139c21229d",
-                "reference": "36cb90e8a28c1f9a23a5c351af2449139c21229d",
+                "url": "https://api.github.com/repos/Kdyby/Annotations/zipball/12e64d6b5e1b49dde3f3fc3bfbcc074c9f688fe7",
+                "reference": "12e64d6b5e1b49dde3f3fc3bfbcc074c9f688fe7",
                 "shasum": ""
             },
             "require": {
@@ -909,7 +909,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -943,26 +943,26 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2015-10-30 21:04:27"
+            "time": "2016-07-07 20:48:31"
         },
         {
             "name": "kdyby/console",
-            "version": "v2.6.0",
+            "version": "v2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Console.git",
-                "reference": "88b7c70721be8cfefb55c562819c852736b816c5"
+                "reference": "cc8ad023106a67e02151a5029561e7624ca31813"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Console/zipball/88b7c70721be8cfefb55c562819c852736b816c5",
-                "reference": "88b7c70721be8cfefb55c562819c852736b816c5",
+                "url": "https://api.github.com/repos/Kdyby/Console/zipball/cc8ad023106a67e02151a5029561e7624ca31813",
+                "reference": "cc8ad023106a67e02151a5029561e7624ca31813",
                 "shasum": ""
             },
             "require": {
                 "nette/di": "~2.3@dev",
                 "php": ">=5.4",
-                "symfony/console": "~2.3"
+                "symfony/console": "~2.3|~3.0"
             },
             "require-dev": {
                 "kdyby/events": "~2.4@dev|~3.0@dev",
@@ -987,7 +987,7 @@
                 "nette/tester": "~1.6@rc",
                 "nette/tokenizer": "~2.2@dev",
                 "nette/utils": "~2.3@dev",
-                "symfony/event-dispatcher": "~2.3",
+                "symfony/event-dispatcher": "~2.3|~3.0",
                 "tracy/tracy": "~2.3@dev"
             },
             "suggest": {
@@ -997,7 +997,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -1029,20 +1029,20 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2016-04-19 11:57:00"
+            "time": "2016-07-07 20:48:31"
         },
         {
             "name": "kdyby/doctrine",
-            "version": "v3.1.1",
+            "version": "v3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Doctrine.git",
-                "reference": "cb548e0fe252aa0b66bc6ea8ccf4d544e00d31cb"
+                "reference": "1ed7ebc5b80ab0a315118a254d794c7c56e30b62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Doctrine/zipball/cb548e0fe252aa0b66bc6ea8ccf4d544e00d31cb",
-                "reference": "cb548e0fe252aa0b66bc6ea8ccf4d544e00d31cb",
+                "url": "https://api.github.com/repos/Kdyby/Doctrine/zipball/1ed7ebc5b80ab0a315118a254d794c7c56e30b62",
+                "reference": "1ed7ebc5b80ab0a315118a254d794c7c56e30b62",
                 "shasum": ""
             },
             "require": {
@@ -1078,7 +1078,7 @@
                 "nette/robot-loader": "~2.3@dev",
                 "nette/safe-stream": "~2.3@dev",
                 "nette/security": "~2.3@dev",
-                "nette/tester": "~1.3@rc",
+                "nette/tester": "~1.7",
                 "nette/tokenizer": "~2.2@dev",
                 "nette/utils": "~2.3@dev",
                 "tracy/tracy": "~2.3@dev"
@@ -1121,20 +1121,20 @@
                 "nette",
                 "orm"
             ],
-            "time": "2016-04-19 12:23:54"
+            "time": "2016-07-07 23:14:14"
         },
         {
             "name": "kdyby/doctrine-cache",
-            "version": "v2.5.1",
+            "version": "v2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/DoctrineCache.git",
-                "reference": "c947608263c09801586a29ba4320d1041d9f0a43"
+                "reference": "2bc9b2ffb703e875fa36968c7f0c96974233f372"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/DoctrineCache/zipball/c947608263c09801586a29ba4320d1041d9f0a43",
-                "reference": "c947608263c09801586a29ba4320d1041d9f0a43",
+                "url": "https://api.github.com/repos/Kdyby/DoctrineCache/zipball/2bc9b2ffb703e875fa36968c7f0c96974233f372",
+                "reference": "2bc9b2ffb703e875fa36968c7f0c96974233f372",
                 "shasum": ""
             },
             "require": {
@@ -1202,20 +1202,20 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2016-04-19 10:22:44"
+            "time": "2016-07-07 20:48:31"
         },
         {
             "name": "kdyby/events",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Events.git",
-                "reference": "3cd25365d4e0fa974c1dcf4406a08d5d516aebce"
+                "reference": "05de56c633167ed218939cfc8cdff984d78c0d9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Events/zipball/3cd25365d4e0fa974c1dcf4406a08d5d516aebce",
-                "reference": "3cd25365d4e0fa974c1dcf4406a08d5d516aebce",
+                "url": "https://api.github.com/repos/Kdyby/Events/zipball/05de56c633167ed218939cfc8cdff984d78c0d9c",
+                "reference": "05de56c633167ed218939cfc8cdff984d78c0d9c",
                 "shasum": ""
             },
             "require": {
@@ -1244,7 +1244,7 @@
                 "nette/tester": "~1.4",
                 "nette/tokenizer": "~2.2@dev",
                 "nette/utils": "~2.3@dev",
-                "symfony/event-dispatcher": "~2.3",
+                "symfony/event-dispatcher": "~2.3|~3.0",
                 "tracy/tracy": "~2.3@dev"
             },
             "type": "library",
@@ -1283,7 +1283,7 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2016-04-19 10:03:12"
+            "time": "2016-07-07 20:48:31"
         },
         {
             "name": "latte/latte",
@@ -1578,16 +1578,16 @@
         },
         {
             "name": "nette/di",
-            "version": "v2.3.11",
+            "version": "v2.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/di.git",
-                "reference": "3f8347bbcac706e1ced651c7beb9affd66298473"
+                "reference": "aed06c37a722a1450854176f1d0b11de473092f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/di/zipball/3f8347bbcac706e1ced651c7beb9affd66298473",
-                "reference": "3f8347bbcac706e1ced651c7beb9affd66298473",
+                "url": "https://api.github.com/repos/nette/di/zipball/aed06c37a722a1450854176f1d0b11de473092f1",
+                "reference": "aed06c37a722a1450854176f1d0b11de473092f1",
                 "shasum": ""
             },
             "require": {
@@ -1626,7 +1626,7 @@
             ],
             "description": "Nette Dependency Injection Component",
             "homepage": "https://nette.org",
-            "time": "2016-06-17 16:43:21"
+            "time": "2016-07-06 13:10:47"
         },
         {
             "name": "nette/finder",
@@ -2398,26 +2398,26 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.8.8",
+            "version": "v3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "c392a6ec72f2122748032c2ad6870420561ffcfa"
+                "reference": "747154aa69b0f83cd02fc9aa554836dee417631a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/c392a6ec72f2122748032c2ad6870420561ffcfa",
-                "reference": "c392a6ec72f2122748032c2ad6870420561ffcfa",
+                "url": "https://api.github.com/repos/symfony/console/zipball/747154aa69b0f83cd02fc9aa554836dee417631a",
+                "reference": "747154aa69b0f83cd02fc9aa554836dee417631a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9",
+                "php": ">=5.5.9",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.1|~3.0.0",
-                "symfony/process": "~2.1|~3.0.0"
+                "symfony/event-dispatcher": "~2.8|~3.0",
+                "symfony/process": "~2.8|~3.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
@@ -2427,7 +2427,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -2454,7 +2454,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-29 07:02:14"
+            "time": "2016-06-29 07:02:31"
         },
         {
             "name": "symfony/event-dispatcher",
