@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "adc4d606681d95b309f253d82b7a6061",
-    "content-hash": "f7fd334842b1e25684d4469cc8d46c18",
+    "hash": "68511ac958b61c3318d147d7f4c6549b",
+    "content-hash": "a59abd4ecf949b8d40921aa739fd541a",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -760,16 +760,16 @@
         },
         {
             "name": "etten/migrations",
-            "version": "v3.0.0",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/migrations.git",
-                "reference": "f93b9b533bb9d6f276713520902bd2689df20f2f"
+                "reference": "6364f0493ffa3f6a011e05f0294fe241548d9739"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/migrations/zipball/f93b9b533bb9d6f276713520902bd2689df20f2f",
-                "reference": "f93b9b533bb9d6f276713520902bd2689df20f2f",
+                "url": "https://api.github.com/repos/etten/migrations/zipball/6364f0493ffa3f6a011e05f0294fe241548d9739",
+                "reference": "6364f0493ffa3f6a011e05f0294fe241548d9739",
                 "shasum": ""
             },
             "require": {
@@ -806,7 +806,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Database migrations runner",
-            "time": "2016-05-18 19:42:53"
+            "time": "2016-07-14 15:31:23"
         },
         {
             "name": "etten/symfony-events",
