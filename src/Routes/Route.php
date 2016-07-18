@@ -49,9 +49,6 @@ class Route extends Entity
 		$this->type = $type;
 	}
 
-	/**
-	 * @return string
-	 */
 	public function getPath() :string
 	{
 		return '/' . $this->getUrl();
@@ -65,76 +62,44 @@ class Route extends Entity
 		return $this->url;
 	}
 
-	/**
-	 * @param string $url
-	 * @return Route
-	 */
 	public function setUrl(string $url)
 	{
 		$this->url = RouteHelpers::webalize($url, '/.');
-		return $this;
 	}
 
-	/**
-	 * @return string
-	 */
 	public function getType() :string
 	{
 		return $this->type;
 	}
 
-	/**
-	 * @return string
-	 */
 	public function getTitle() :string
 	{
 		return $this->title;
 	}
 
-	/**
-	 * @param string $title
-	 * @return Route
-	 */
 	public function setTitle(string $title)
 	{
 		$this->title = $title;
-		return $this;
 	}
 
-	/**
-	 * @return string
-	 */
 	public function getKeywords() :string
 	{
 		return $this->keywords;
 	}
 
-	/**
-	 * @param string $keywords
-	 * @return Route
-	 */
 	public function setKeywords(string $keywords)
 	{
 		$this->keywords = $keywords;
-		return $this;
 	}
 
-	/**
-	 * @return string
-	 */
 	public function getDescription() :string
 	{
 		return $this->description;
 	}
 
-	/**
-	 * @param string $description
-	 * @return Route
-	 */
 	public function setDescription(string $description)
 	{
 		$this->description = $description;
-		return $this;
 	}
 
 }

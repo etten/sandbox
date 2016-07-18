@@ -27,50 +27,30 @@ class User extends Entity implements Security\IIdentity
 	 */
 	private $passwordHash;
 
-	/**
-	 * @param string $username
-	 * @param string $password
-	 */
 	public function __construct(string $username, string $password)
 	{
 		$this->setUsername($username);
 		$this->setPassword($password);
 	}
 
-	/**
-	 * @return string
-	 */
 	public function getUsername() :string
 	{
 		return $this->username;
 	}
 
-	/**
-	 * @return string
-	 */
 	public function getPasswordHash() :string
 	{
 		return $this->passwordHash;
 	}
 
-	/**
-	 * @param string $username
-	 * @return $this
-	 */
 	public function setUsername(string $username)
 	{
 		$this->username = $username;
-		return $this;
 	}
 
-	/**
-	 * @param string $passwordHash
-	 * @return $this
-	 */
 	public function setPassword(string $passwordHash)
 	{
 		$this->passwordHash = Security\Passwords::hash($passwordHash);
-		return $this;
 	}
 
 	public function needsRehash() :bool
@@ -87,7 +67,7 @@ class User extends Entity implements Security\IIdentity
 	 * Returns a list of roles that the user is a member of.
 	 * @return array
 	 */
-	public function getRoles()
+	public function getRoles() :array
 	{
 		return [];
 	}

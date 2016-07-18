@@ -36,32 +36,19 @@ class Article extends Entity
 		return $this->name;
 	}
 
-	/**
-	 * @param string $name
-	 * @return $this
-	 */
 	public function setName(string $name)
 	{
 		$this->name = $name;
-		return $this;
 	}
 
-	/**
-	 * @return Routes\Route
-	 */
 	public function getRoute() :Routes\Route
 	{
 		return $this->route;
 	}
 
-	/**
-	 * @param Routes\Route $route
-	 * @return $this
-	 */
 	public function setRoute(Routes\Route $route)
 	{
 		$this->route = $route;
-		return $this;
 	}
 
 }
