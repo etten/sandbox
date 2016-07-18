@@ -2,27 +2,27 @@
 
 namespace Project\Users;
 
-use Etten\Doctrine\Entities\Attributes\Id;
-use Etten\Doctrine\Entities\Entity;
+use Doctrine\ORM\Mapping as ORM;
+use Etten\Doctrine\Entities;
 use Nette\Security;
 
 /**
- * @ORM\Mapping\Entity()
+ * @ORM\Entity()
  */
-class User extends Entity implements Security\IIdentity
+class User extends Entities\Entity implements Security\IIdentity
 {
 
-	use Id;
+	use Entities\Attributes\Id;
 
 	/**
 	 * @var string
-	 * @ORM\Mapping\Column(type="string", unique=true)
+	 * @ORM\Column(type="string", unique=true)
 	 */
 	private $username;
 
 	/**
 	 * @var string
-	 * @ORM\Mapping\Column(type="string", length=60)
+	 * @ORM\Column(type="string", length=60)
 	 */
 	private $passwordHash;
 

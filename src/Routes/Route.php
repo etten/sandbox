@@ -2,44 +2,44 @@
 
 namespace Project\Routes;
 
-use Etten\Doctrine\Entities\Attributes\Id;
-use Etten\Doctrine\Entities\Entity;
+use Doctrine\ORM\Mapping as ORM;
+use Etten\Doctrine\Entities;
 
 /**
- * @ORM\Mapping\Entity()
+ * @ORM\Entity()
  */
-class Route extends Entity
+class Route extends Entities\Entity
 {
 
-	use Id;
+	use Entities\Attributes\Id;
 
 	/**
 	 * @var string
-	 * @ORM\Mapping\Column(type="string", unique=true)
+	 * @ORM\Column(type="string", unique=true)
 	 */
 	private $url;
 
 	/**
 	 * @var string
-	 * @ORM\Mapping\Column(type="string")
+	 * @ORM\Column(type="string")
 	 */
 	private $type;
 
 	/**
 	 * @var string
-	 * @ORM\Mapping\Column(type="string")
+	 * @ORM\Column(type="string")
 	 */
 	private $title = '';
 
 	/**
 	 * @var string
-	 * @ORM\Mapping\Column(type="string")
+	 * @ORM\Column(type="string")
 	 */
 	private $keywords = '';
 
 	/**
 	 * @var string
-	 * @ORM\Mapping\Column(type="string")
+	 * @ORM\Column(type="string")
 	 */
 	private $description = '';
 
@@ -53,9 +53,6 @@ class Route extends Entity
 		return '/' . $this->getUrl();
 	}
 
-	/**
-	 * @return string
-	 */
 	public function getUrl() :string
 	{
 		return $this->url;

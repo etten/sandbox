@@ -2,28 +2,28 @@
 
 namespace Project\Articles;
 
-use Etten\Doctrine\Entities\Attributes\Id;
-use Etten\Doctrine\Entities\Entity;
+use Doctrine\ORM\Mapping as ORM;
+use Etten\Doctrine\Entities;
 use Project\Routes;
 
 /**
- * @ORM\Mapping\Entity()
+ * @ORM\Entity()
  */
-class Article extends Entity
+class Article extends Entities\Entity
 {
 
-	use Id;
+	use Entities\Attributes\Id;
 
 	/**
-	 * @ORM\Mapping\Column(type="string")
+	 * @ORM\Column(type="string")
 	 * @var string
 	 */
 	private $name = '';
 
 	/**
 	 * @var Routes\Route
-	 * @ORM\Mapping\OneToOne(targetEntity="\Project\Routes\Route", cascade={"persist", "remove"})
-	 * @ORM\Mapping\JoinColumn(nullable=false)
+	 * @ORM\OneToOne(targetEntity="\Project\Routes\Route", cascade={"persist", "remove"})
+	 * @ORM\JoinColumn(nullable=false)
 	 */
 	private $route;
 
