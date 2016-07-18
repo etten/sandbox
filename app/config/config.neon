@@ -23,11 +23,6 @@ application:
 	scanComposer: no # scanDirs only, not every file is deployed
 
 
-nette:
-	container:
-		debugger: yes
-
-
 session:
 	expiration: 14 days
 	save_path: %tempDir%/sessions
