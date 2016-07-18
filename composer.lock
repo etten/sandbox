@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d4489defafa9c41f68f680ff3366626b",
-    "content-hash": "fa7852051ebc0bb0218b12c3fd4658d4",
+    "hash": "217bda89f29745f4972da31e33eb032f",
+    "content-hash": "96ac96a8c23757f6b8468cc62cb5293d",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -608,16 +608,16 @@
         },
         {
             "name": "etten/app",
-            "version": "v2.5.0",
+            "version": "v2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/app.git",
-                "reference": "dbe51828b4e67003def5dfc8f0b1a5066ab734ad"
+                "reference": "19be88312645a993a48d2aa5ee999ac52d3ca0f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/app/zipball/dbe51828b4e67003def5dfc8f0b1a5066ab734ad",
-                "reference": "dbe51828b4e67003def5dfc8f0b1a5066ab734ad",
+                "url": "https://api.github.com/repos/etten/app/zipball/19be88312645a993a48d2aa5ee999ac52d3ca0f1",
+                "reference": "19be88312645a993a48d2aa5ee999ac52d3ca0f1",
                 "shasum": ""
             },
             "require": {
@@ -656,20 +656,20 @@
                 "bootstrap",
                 "nette"
             ],
-            "time": "2016-07-18 05:20:22"
+            "time": "2016-07-18 10:09:44"
         },
         {
             "name": "etten/deployment",
-            "version": "v3.1.1",
+            "version": "v3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/deployment.git",
-                "reference": "9c654eed55f54290b983a5c01de9fa1dc54748d6"
+                "reference": "81e9551252f6e0cb78462ef473b113b1b61f07e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/deployment/zipball/9c654eed55f54290b983a5c01de9fa1dc54748d6",
-                "reference": "9c654eed55f54290b983a5c01de9fa1dc54748d6",
+                "url": "https://api.github.com/repos/etten/deployment/zipball/81e9551252f6e0cb78462ef473b113b1b61f07e1",
+                "reference": "81e9551252f6e0cb78462ef473b113b1b61f07e1",
                 "shasum": ""
             },
             "require": {
@@ -706,20 +706,20 @@
                 "php",
                 "upload"
             ],
-            "time": "2016-05-11 11:43:16"
+            "time": "2016-07-18 10:15:30"
         },
         {
             "name": "etten/doctrine",
-            "version": "v2.11.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/doctrine.git",
-                "reference": "560175e00e4292f9cd0bf93b40b3bea795292bed"
+                "reference": "ab3c5ed48f7984c7426e14732a85f7e87d653e87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/doctrine/zipball/560175e00e4292f9cd0bf93b40b3bea795292bed",
-                "reference": "560175e00e4292f9cd0bf93b40b3bea795292bed",
+                "url": "https://api.github.com/repos/etten/doctrine/zipball/ab3c5ed48f7984c7426e14732a85f7e87d653e87",
+                "reference": "ab3c5ed48f7984c7426e14732a85f7e87d653e87",
                 "shasum": ""
             },
             "require": {
@@ -756,37 +756,37 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2016-07-12 17:25:14"
+            "time": "2016-07-18 10:16:50"
         },
         {
             "name": "etten/migrations",
-            "version": "v3.1.1",
+            "version": "v3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/migrations.git",
-                "reference": "db9d14afdd6635c4587e2b5a1972a17dfdd77dab"
+                "reference": "d17f31b214b9ea7e96ef7927f48a7acf58f8c132"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/migrations/zipball/db9d14afdd6635c4587e2b5a1972a17dfdd77dab",
-                "reference": "db9d14afdd6635c4587e2b5a1972a17dfdd77dab",
+                "url": "https://api.github.com/repos/etten/migrations/zipball/d17f31b214b9ea7e96ef7927f48a7acf58f8c132",
+                "reference": "d17f31b214b9ea7e96ef7927f48a7acf58f8c132",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0"
             },
             "require-dev": {
-                "dibi/dibi": "~2.3",
-                "doctrine/dbal": "~2.5",
+                "dibi/dibi": "^2.3",
+                "doctrine/dbal": "^2.5",
                 "etten/codestyle": "^2.0",
-                "mockery/mockery": "~0.9",
-                "nette/database": "~2.2",
-                "nette/di": "~2.3",
-                "nette/tester": "~1.4",
-                "nette/utils": "~2.3",
-                "nextras/dbal": "@dev",
+                "mockery/mockery": "^0.9",
+                "nette/database": "^2.3",
+                "nette/di": "^2.3",
+                "nette/tester": "^1.7",
+                "nette/utils": "^2.3",
+                "nextras/dbal": "^2.0",
                 "squizlabs/php_codesniffer": "~2.6.0",
-                "symfony/console": "~2.6"
+                "symfony/console": "^2.8"
             },
             "suggest": {
                 "dibi/dibi": "to use DibiAdapter",
@@ -806,32 +806,32 @@
                 "BSD-3-Clause"
             ],
             "description": "Database migrations runner",
-            "time": "2016-07-14 16:39:44"
+            "time": "2016-07-18 10:45:00"
         },
         {
             "name": "etten/symfony-events",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/symfony-events.git",
-                "reference": "af6e9368e4d6d45d00818701a99525ad48583cde"
+                "reference": "473571c2e60d8b378f07fa902907579f44d8d994"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/symfony-events/zipball/af6e9368e4d6d45d00818701a99525ad48583cde",
-                "reference": "af6e9368e4d6d45d00818701a99525ad48583cde",
+                "url": "https://api.github.com/repos/etten/symfony-events/zipball/473571c2e60d8b378f07fa902907579f44d8d994",
+                "reference": "473571c2e60d8b378f07fa902907579f44d8d994",
                 "shasum": ""
             },
             "require": {
                 "kdyby/events": "^3.0",
-                "nette/di": "~2.3.0",
-                "nette/utils": "~2.3.0",
-                "php": ">=5.6",
+                "nette/di": "^2.3",
+                "nette/utils": "^2.3",
+                "php": ">=7.0",
                 "symfony/event-dispatcher": "^2.8"
             },
             "require-dev": {
-                "etten/codestyle": "^1.0",
-                "squizlabs/php_codesniffer": "^2.5"
+                "etten/codestyle": "^2.0",
+                "squizlabs/php_codesniffer": "~2.6.0"
             },
             "type": "library",
             "autoload": {
@@ -857,7 +857,7 @@
                 "nette",
                 "symfony"
             ],
-            "time": "2016-03-08 22:14:54"
+            "time": "2016-07-18 10:35:45"
         },
         {
             "name": "kdyby/annotations",

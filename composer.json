@@ -14,8 +14,8 @@
         "etten/app": "^2.5",
         "etten/deployment": "^3.1",
         "etten/migrations": "^3.1",
-        "etten/symfony-events": "^1.0",
-        "etten/doctrine": "^2.11",
+        "etten/symfony-events": "^1.1",
+        "etten/doctrine": "^3.0",
         "nette/application": "~2.3.6",
         "nette/bootstrap": "~2.3.0",
         "nette/caching": "~2.4.0",
@@ -30,9 +30,9 @@
         "nette/utils": "~2.3.0",
         "latte/latte": "~2.3.0",
         "tracy/tracy": "~2.3.0",
-        "kdyby/console": "^2.5",
+        "kdyby/console": "^2.6",
         "kdyby/events": "^3.0",
-        "kdyby/doctrine": "^3.0"
+        "kdyby/doctrine": "^3.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.4",
