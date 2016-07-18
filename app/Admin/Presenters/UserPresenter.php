@@ -59,7 +59,7 @@ class UserPresenter extends BasePresenter
 		$this->redirect('Sign:in');
 	}
 
-	private function getLoggedUser():Users\User
+	private function getLoggedUser() :Users\User
 	{
 		$id = $this->getUser()->getIdentity()->getId();
 		return $this->users->find($id);

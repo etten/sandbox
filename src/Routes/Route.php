@@ -52,7 +52,7 @@ class Route extends Entity
 	/**
 	 * @return string
 	 */
-	public function getPath():string
+	public function getPath() :string
 	{
 		return '/' . $this->getUrl();
 	}
@@ -60,7 +60,7 @@ class Route extends Entity
 	/**
 	 * @return string
 	 */
-	public function getUrl():string
+	public function getUrl() :string
 	{
 		return $this->url;
 	}
@@ -78,7 +78,7 @@ class Route extends Entity
 	/**
 	 * @return string
 	 */
-	public function getType():string
+	public function getType() :string
 	{
 		return $this->type;
 	}
@@ -86,7 +86,7 @@ class Route extends Entity
 	/**
 	 * @return string
 	 */
-	public function getTitle():string
+	public function getTitle() :string
 	{
 		return $this->title;
 	}
@@ -104,7 +104,7 @@ class Route extends Entity
 	/**
 	 * @return string
 	 */
-	public function getKeywords():string
+	public function getKeywords() :string
 	{
 		return $this->keywords;
 	}
@@ -122,7 +122,7 @@ class Route extends Entity
 	/**
 	 * @return string
 	 */
-	public function getDescription():string
+	public function getDescription() :string
 	{
 		return $this->description;
 	}

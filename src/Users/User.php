@@ -40,7 +40,7 @@ class User extends Entity implements Security\IIdentity
 	/**
 	 * @return string
 	 */
-	public function getUsername():string
+	public function getUsername() :string
 	{
 		return $this->username;
 	}
@@ -48,7 +48,7 @@ class User extends Entity implements Security\IIdentity
 	/**
 	 * @return string
 	 */
-	public function getPasswordHash():string
+	public function getPasswordHash() :string
 	{
 		return $this->passwordHash;
 	}
@@ -73,12 +73,12 @@ class User extends Entity implements Security\IIdentity
 		return $this;
 	}
 
-	public function needsRehash():bool
+	public function needsRehash() :bool
 	{
 		return Security\Passwords::needsRehash($this->getPasswordHash());
 	}
 
-	public function verifyPassword(string $password):bool
+	public function verifyPassword(string $password) :bool
 	{
 		return Security\Passwords::verify($password, $this->getPasswordHash());
 	}

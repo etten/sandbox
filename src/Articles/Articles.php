@@ -22,7 +22,7 @@ class Articles extends Facade
 			->getOneOrNullResult();
 	}
 
-	private function createJoinedQueryBuilder():ORM\QueryBuilder
+	private function createJoinedQueryBuilder() :ORM\QueryBuilder
 	{
 		return $this->createQueryBuilder()
 			->select('a, ar')

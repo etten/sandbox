@@ -31,7 +31,7 @@ class Article extends Entity
 	/**
 	 * @return string
 	 */
-	public function getName():string
+	public function getName() :string
 	{
 		return $this->name;
 	}
@@ -49,7 +49,7 @@ class Article extends Entity
 	/**
 	 * @return Routes\Route
 	 */
-	public function getRoute():Routes\Route
+	public function getRoute() :Routes\Route
 	{
 		return $this->route;
 	}

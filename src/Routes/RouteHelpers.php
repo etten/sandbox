@@ -13,7 +13,7 @@ class RouteHelpers
 	/** @var \Transliterator|null */
 	private static $transliterator;
 
-	public static function webalize(string $s, string $charlist = ''):string
+	public static function webalize(string $s, string $charlist = '') :string
 	{
 		$s = self::toAscii($s);
 		$s = strtolower($s);
@@ -21,7 +21,7 @@ class RouteHelpers
 		return trim($s, '-');
 	}
 
-	public static function toAscii(string $s):string
+	public static function toAscii(string $s) :string
 	{
 		if (!self::$transliterator) {
 			self::$transliterator = \Transliterator::create('Any-Latin; Latin-ASCII');
