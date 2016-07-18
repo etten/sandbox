@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "68511ac958b61c3318d147d7f4c6549b",
-    "content-hash": "a59abd4ecf949b8d40921aa739fd541a",
+    "hash": "d4489defafa9c41f68f680ff3366626b",
+    "content-hash": "fa7852051ebc0bb0218b12c3fd4658d4",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -608,16 +608,16 @@
         },
         {
             "name": "etten/app",
-            "version": "v2.4.2",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/app.git",
-                "reference": "41cc8634fbd0cb53ca0ab18773fb44c79d5f4b8a"
+                "reference": "dbe51828b4e67003def5dfc8f0b1a5066ab734ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/app/zipball/41cc8634fbd0cb53ca0ab18773fb44c79d5f4b8a",
-                "reference": "41cc8634fbd0cb53ca0ab18773fb44c79d5f4b8a",
+                "url": "https://api.github.com/repos/etten/app/zipball/dbe51828b4e67003def5dfc8f0b1a5066ab734ad",
+                "reference": "dbe51828b4e67003def5dfc8f0b1a5066ab734ad",
                 "shasum": ""
             },
             "require": {
@@ -656,7 +656,7 @@
                 "bootstrap",
                 "nette"
             ],
-            "time": "2016-06-26 12:27:30"
+            "time": "2016-07-18 05:20:22"
         },
         {
             "name": "etten/deployment",
@@ -760,16 +760,16 @@
         },
         {
             "name": "etten/migrations",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/migrations.git",
-                "reference": "6364f0493ffa3f6a011e05f0294fe241548d9739"
+                "reference": "db9d14afdd6635c4587e2b5a1972a17dfdd77dab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/migrations/zipball/6364f0493ffa3f6a011e05f0294fe241548d9739",
-                "reference": "6364f0493ffa3f6a011e05f0294fe241548d9739",
+                "url": "https://api.github.com/repos/etten/migrations/zipball/db9d14afdd6635c4587e2b5a1972a17dfdd77dab",
+                "reference": "db9d14afdd6635c4587e2b5a1972a17dfdd77dab",
                 "shasum": ""
             },
             "require": {
@@ -806,7 +806,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Database migrations runner",
-            "time": "2016-07-14 15:31:23"
+            "time": "2016-07-14 16:39:44"
         },
         {
             "name": "etten/symfony-events",
