@@ -9,7 +9,7 @@ class Users extends Facade
 
 	/**
 	 * @param string $username
-	 * @return null|User
+	 * @return null|object|User
 	 */
 	public function findOneByUsername(string $username)
 	{
@@ -19,7 +19,7 @@ class Users extends Facade
 
 	/**
 	 * @param mixed $id
-	 * @return null|User
+	 * @return null|object|User
 	 */
 	public function find($id)
 	{

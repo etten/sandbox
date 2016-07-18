@@ -3,7 +3,6 @@
 namespace Project\Users;
 
 use Nette\Security;
-use Nette\Utils;
 
 class Authenticator implements Security\IAuthenticator
 {

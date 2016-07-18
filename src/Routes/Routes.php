@@ -14,7 +14,7 @@ class Routes extends Facade
 
 	/**
 	 * @param string $url
-	 * @return null|Route
+	 * @return null|object|Route
 	 */
 	public function findOneByUrl(string $url)
 	{

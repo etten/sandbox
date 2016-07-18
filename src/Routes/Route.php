@@ -2,7 +2,6 @@
 
 namespace Project\Routes;
 
-use Doctrine\ORM;
 use Etten\Doctrine\Entities\Attributes\Id;
 use Etten\Doctrine\Entities\Entity;
 
