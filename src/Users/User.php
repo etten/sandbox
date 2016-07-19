@@ -32,12 +32,12 @@ class User extends Entities\Entity implements Security\IIdentity
 		$this->setPassword($password);
 	}
 
-	public function getUsername() :string
+	public function getUsername(): string
 	{
 		return $this->username;
 	}
 
-	public function getPasswordHash() :string
+	public function getPasswordHash(): string
 	{
 		return $this->passwordHash;
 	}
@@ -52,12 +52,12 @@ class User extends Entities\Entity implements Security\IIdentity
 		$this->passwordHash = Security\Passwords::hash($passwordHash);
 	}
 
-	public function needsRehash() :bool
+	public function needsRehash(): bool
 	{
 		return Security\Passwords::needsRehash($this->getPasswordHash());
 	}
 
-	public function verifyPassword(string $password) :bool
+	public function verifyPassword(string $password): bool
 	{
 		return Security\Passwords::verify($password, $this->getPasswordHash());
 	}
@@ -66,7 +66,7 @@ class User extends Entities\Entity implements Security\IIdentity
 	 * Returns a list of roles that the user is a member of.
 	 * @return array
 	 */
-	public function getRoles() :array
+	public function getRoles(): array
 	{
 		return [];
 	}

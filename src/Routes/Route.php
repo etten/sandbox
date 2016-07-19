@@ -48,12 +48,12 @@ class Route extends Entities\Entity
 		$this->type = $type;
 	}
 
-	public function getPath() :string
+	public function getPath(): string
 	{
 		return '/' . $this->getUrl();
 	}
 
-	public function getUrl() :string
+	public function getUrl(): string
 	{
 		return $this->url;
 	}
@@ -63,12 +63,12 @@ class Route extends Entities\Entity
 		$this->url = RouteHelpers::webalize($url, '/.');
 	}
 
-	public function getType() :string
+	public function getType(): string
 	{
 		return $this->type;
 	}
 
-	public function getTitle() :string
+	public function getTitle(): string
 	{
 		return $this->title;
 	}
@@ -78,7 +78,7 @@ class Route extends Entities\Entity
 		$this->title = $title;
 	}
 
-	public function getKeywords() :string
+	public function getKeywords(): string
 	{
 		return $this->keywords;
 	}
@@ -88,7 +88,7 @@ class Route extends Entities\Entity
 		$this->keywords = $keywords;
 	}
 
-	public function getDescription() :string
+	public function getDescription(): string
 	{
 		return $this->description;
 	}
