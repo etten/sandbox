@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7d4e353d0cbf8ce0162dc7f4ef0af20a",
-    "content-hash": "b1fd866e0837e05a26eb5e0070c400d2",
+    "hash": "660345332374ee832d220656f0f0cccb",
+    "content-hash": "dc4a2f11b79158c4e5483d8b9622e88c",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -710,16 +710,16 @@
         },
         {
             "name": "etten/doctrine",
-            "version": "v3.0.0",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/doctrine.git",
-                "reference": "ab3c5ed48f7984c7426e14732a85f7e87d653e87"
+                "reference": "2cfa8f2cd39ae341e0bf667de3bc70a5af0a8741"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/doctrine/zipball/ab3c5ed48f7984c7426e14732a85f7e87d653e87",
-                "reference": "ab3c5ed48f7984c7426e14732a85f7e87d653e87",
+                "url": "https://api.github.com/repos/etten/doctrine/zipball/2cfa8f2cd39ae341e0bf667de3bc70a5af0a8741",
+                "reference": "2cfa8f2cd39ae341e0bf667de3bc70a5af0a8741",
                 "shasum": ""
             },
             "require": {
@@ -756,7 +756,7 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2016-07-18 10:16:50"
+            "time": "2016-07-19 19:11:31"
         },
         {
             "name": "etten/migrations",
