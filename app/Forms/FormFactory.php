@@ -8,15 +8,10 @@ use Nette\Object;
 class FormFactory extends Object
 {
 
-	/**
-	 * @var callable[]
-	 */
+	/** @var callable[] */
 	public $onCreate = [];
 
-	/**
-	 * @return Form
-	 */
-	public function create()
+	public function create(): Form
 	{
 		$form = new Form;
 		$this->onCreate($form);

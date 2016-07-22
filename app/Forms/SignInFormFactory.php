@@ -20,10 +20,7 @@ class SignInFormFactory
 		$this->user = $user;
 	}
 
-	/**
-	 * @return Form
-	 */
-	public function create()
+	public function create(): Form
 	{
 		$form = $this->factory->create();
 
@@ -42,7 +39,7 @@ class SignInFormFactory
 		return $form;
 	}
 
-	public function formSuccess(Form $form, $values)
+	public function formSuccess(Form $form, array $values)
 	{
 		if ($values['remember']) {
 			$this->user->setExpiration('14 days', FALSE);

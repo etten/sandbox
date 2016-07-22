@@ -27,9 +27,6 @@ class Article extends Entities\Entity
 	 */
 	private $route;
 
-	/**
-	 * @return string
-	 */
 	public function getName(): string
 	{
 		return $this->name;

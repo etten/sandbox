@@ -19,7 +19,7 @@ class UserPresenter extends BasePresenter
 	 */
 	public $users;
 
-	protected function createComponentEditForm()
+	protected function createComponentEditForm(): Form
 	{
 		$form = $this->formFactory->create();
 

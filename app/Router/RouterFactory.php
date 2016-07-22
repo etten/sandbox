@@ -16,10 +16,7 @@ class RouterFactory
 		$this->routeRouter = $routeRouter;
 	}
 
-	/**
-	 * @return Nette\Application\IRouter
-	 */
-	public function create()
+	public function create(): Nette\Application\IRouter
 	{
 		$router = new Routers\RouteList();
 
@@ -30,7 +27,7 @@ class RouterFactory
 		return $router;
 	}
 
-	private function createAdmin()
+	private function createAdmin(): Nette\Application\IRouter
 	{
 		$route = new Routers\RouteList('Admin');
 		$route[] = new Routers\Route('admin/<presenter>/<action>[/<id>]', 'Dashboard:default');
@@ -38,7 +35,7 @@ class RouterFactory
 		return $route;
 	}
 
-	private function createFront()
+	private function createFront(): Nette\Application\IRouter
 	{
 		$route = new Routers\RouteList('Front');
 		$route[] = new Routers\Route('<presenter>/<action>[/<id>]', 'Homepage:default');

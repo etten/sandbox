@@ -3,6 +3,7 @@
 namespace App\Admin\Presenters;
 
 use App\Forms\SignInFormFactory;
+use Nette\Application\UI\Form;
 
 class SignPresenter extends BasePresenter
 {
@@ -18,7 +19,7 @@ class SignPresenter extends BasePresenter
 		$this->getUser()->logout();
 	}
 
-	protected function createComponentSignInForm()
+	protected function createComponentSignInForm(): Form
 	{
 		$form = $this->signInFormFactory->create();
 
