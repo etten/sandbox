@@ -2,11 +2,6 @@
 	RewriteEngine On
 	RewriteBase /
 
-	# Allow /stats access
 	RewriteCond %{REQUEST_URI} !^/stats/
-
-	# B-flag (escape backreferences) is suitable for slashes in custom URL
-	# but it requires directive "AllowEncodedSlashes On" (VirtualHost).
-	# See https://httpd.apache.org/docs/2.2/rewrite/flags.html#page-header
-	RewriteRule ^(.*)$ %{ENV:BASE}web/$1 [QSA,L]
+	RewriteRule ^(.*)$ %{ENV:BASE}www/$1 [QSA,L]
 </IfModule>
