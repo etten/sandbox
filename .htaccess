@@ -3,5 +3,6 @@
 	RewriteBase /
 
 	RewriteCond %{REQUEST_URI} !^/stats/
+	RewriteCond %{REQUEST_URI} !^/awstats-icon/
 	RewriteRule ^(.*)$ %{ENV:BASE}www/$1 [QSA,L]
 </IfModule>
