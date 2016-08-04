@@ -2,7 +2,13 @@
 	RewriteEngine On
 	RewriteBase /
 
+	# keybase.io
+	RewriteCond %{REQUEST_URI} !^/.well-known/
+
+	# awstats.org
 	RewriteCond %{REQUEST_URI} !^/stats/
 	RewriteCond %{REQUEST_URI} !^/awstats-icon/
+
+	# web content
 	RewriteRule ^(.*)$ %{ENV:BASE}www/$1 [QSA,L]
 </IfModule>
