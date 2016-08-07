@@ -15,6 +15,10 @@ on security and performance and is definitely one of the safest PHP frameworks.
 * [Composer installed](https://getcomposer.org/)
 * [Apache HTTP Server](https://httpd.apache.org/), [mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) enabled
 
+## Optional requirements
+
+* [Memcached](http://php.net/manual/en/book.memcached.php) May be hard or impossible to install on **Windows**. You can remove `memcached` and `doctrine.cache` services or uncomment lines in `app/config/config.local.neon` after installation.
+
 ## Installing
 
 The best way to install Sandbox is using [Composer](https://getcomposer.org/doc/00-intro.md).
