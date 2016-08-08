@@ -30,18 +30,6 @@ session:
 	gc_probability: 1 # default is 1; on some system is turned off
 
 
-services:
-	memcached:
-		class: Memcached
-		setup:
-			- addServer('127.0.0.1', 11211)
-
-	doctrine.cache:
-		class: Doctrine\Common\Cache\MemcachedCache
-		setup:
-			- setMemcached(@memcached)
-
-
 extensions:
 	kdyby.console: Kdyby\Console\DI\ConsoleExtension
 	kdyby.events: Kdyby\Events\DI\EventsExtension
@@ -60,7 +48,7 @@ kdyby.console:
 
 
 kdyby.annotations:
-	cache: @doctrine.cache
+	cache: Etten\Doctrine\Caching\Decorators\SQLite3Cache('%tempDir%/cache/doctrine.annotations.s3db')
 
 
 kdyby.doctrine:
@@ -72,10 +60,10 @@ kdyby.doctrine:
 	metadata:
 		Project: %srcDir%
 
-	metadataCache: @doctrine.cache
-	queryCache: @doctrine.cache
-	resultCache: @doctrine.cache
-	hydrationCache: @doctrine.cache
+	metadataCache: Etten\Doctrine\Caching\Decorators\SQLite3Cache('%tempDir%/cache/doctrine.metadata.s3db')
+	queryCache: Etten\Doctrine\Caching\Decorators\SQLite3Cache('%tempDir%/cache/doctrine.query.s3db')
+	resultCache: Etten\Doctrine\Caching\Decorators\SQLite3Cache('%tempDir%/cache/doctrine.result.s3db')
+	hydrationCache: Etten\Doctrine\Caching\Decorators\SQLite3Cache('%tempDir%/cache/doctrine.hydratation.s3db')
 
 
 etten.migrations:

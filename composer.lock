@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "660345332374ee832d220656f0f0cccb",
-    "content-hash": "dc4a2f11b79158c4e5483d8b9622e88c",
+    "hash": "569edba747b40e9126c6710d0bf22ace",
+    "content-hash": "a3fc16b3ca3454ee641a5d012dd18717",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -608,16 +608,16 @@
         },
         {
             "name": "etten/app",
-            "version": "v2.5.2",
+            "version": "v2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/app.git",
-                "reference": "ff8bae1d80a19d68d660bc9de9571b70c38cd84e"
+                "reference": "d8f9925daa2b35cbe707e349841348132cb0e9a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/app/zipball/ff8bae1d80a19d68d660bc9de9571b70c38cd84e",
-                "reference": "ff8bae1d80a19d68d660bc9de9571b70c38cd84e",
+                "url": "https://api.github.com/repos/etten/app/zipball/d8f9925daa2b35cbe707e349841348132cb0e9a0",
+                "reference": "d8f9925daa2b35cbe707e349841348132cb0e9a0",
                 "shasum": ""
             },
             "require": {
@@ -629,9 +629,9 @@
             },
             "require-dev": {
                 "etten/codestyle": "^2.0",
-                "kdyby/console": "^2.5",
-                "kdyby/doctrine": "^3.0",
-                "phpunit/phpunit": "^5.1",
+                "kdyby/console": "^2.6",
+                "kdyby/doctrine": "^3.1",
+                "phpunit/phpunit": "^5.4",
                 "squizlabs/php_codesniffer": "~2.6.0"
             },
             "type": "library",
@@ -656,7 +656,7 @@
                 "bootstrap",
                 "nette"
             ],
-            "time": "2016-07-31 10:46:31"
+            "time": "2016-08-08 08:29:45"
         },
         {
             "name": "etten/deployment",
@@ -710,26 +710,26 @@
         },
         {
             "name": "etten/doctrine",
-            "version": "v3.1.0",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/doctrine.git",
-                "reference": "2cfa8f2cd39ae341e0bf667de3bc70a5af0a8741"
+                "reference": "187b22241819655ec163a8986a0e57dd06fb736f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/doctrine/zipball/2cfa8f2cd39ae341e0bf667de3bc70a5af0a8741",
-                "reference": "2cfa8f2cd39ae341e0bf667de3bc70a5af0a8741",
+                "url": "https://api.github.com/repos/etten/doctrine/zipball/187b22241819655ec163a8986a0e57dd06fb736f",
+                "reference": "187b22241819655ec163a8986a0e57dd06fb736f",
                 "shasum": ""
             },
             "require": {
-                "kdyby/doctrine": "~3.0",
+                "kdyby/doctrine": "^3.1",
                 "php": ">=7.0",
-                "ramsey/uuid-doctrine": "^1.1"
+                "ramsey/uuid-doctrine": "^1.2"
             },
             "require-dev": {
                 "etten/codestyle": "^2.0",
-                "phpunit/phpunit": "^5.1",
+                "phpunit/phpunit": "^5.4",
                 "rixxi/gedmo": "^1.0",
                 "squizlabs/php_codesniffer": "~2.6.0"
             },
@@ -756,7 +756,7 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2016-07-19 19:11:31"
+            "time": "2016-08-08 08:25:10"
         },
         {
             "name": "etten/migrations",
@@ -3268,16 +3268,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.4.8",
+            "version": "5.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3132365e1430c091f208e120b8845d39c25f20e6"
+                "reference": "c7b3e1dcc1d183f26d5ba282881fe65c2cbb5b2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3132365e1430c091f208e120b8845d39c25f20e6",
-                "reference": "3132365e1430c091f208e120b8845d39c25f20e6",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c7b3e1dcc1d183f26d5ba282881fe65c2cbb5b2b",
+                "reference": "c7b3e1dcc1d183f26d5ba282881fe65c2cbb5b2b",
                 "shasum": ""
             },
             "require": {
@@ -3316,7 +3316,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.4.x-dev"
+                    "dev-master": "5.5.x-dev"
                 }
             },
             "autoload": {
@@ -3342,7 +3342,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-07-26 14:48:00"
+            "time": "2016-08-05 04:49:02"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
