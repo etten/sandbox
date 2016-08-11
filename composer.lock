@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "569edba747b40e9126c6710d0bf22ace",
-    "content-hash": "a3fc16b3ca3454ee641a5d012dd18717",
+    "hash": "b997af299b7800b7d4bbf9e6f6c5563d",
+    "content-hash": "64b904f2b37afe7b45635d8e1b3999a0",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -710,16 +710,16 @@
         },
         {
             "name": "etten/doctrine",
-            "version": "v3.2.0",
+            "version": "v4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/doctrine.git",
-                "reference": "187b22241819655ec163a8986a0e57dd06fb736f"
+                "reference": "d0548cefbbe6c897510077a611c0a3c37c4c10da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/doctrine/zipball/187b22241819655ec163a8986a0e57dd06fb736f",
-                "reference": "187b22241819655ec163a8986a0e57dd06fb736f",
+                "url": "https://api.github.com/repos/etten/doctrine/zipball/d0548cefbbe6c897510077a611c0a3c37c4c10da",
+                "reference": "d0548cefbbe6c897510077a611c0a3c37c4c10da",
                 "shasum": ""
             },
             "require": {
@@ -756,7 +756,7 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2016-08-08 08:25:10"
+            "time": "2016-08-11 12:30:00"
         },
         {
             "name": "etten/migrations",
@@ -4045,28 +4045,29 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "30eed06dd6bc88410a4ff7f77b6d22f3ce13dbde"
+                "reference": "bb2d123231c095735130cc8f6d31385a44c7b308"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/30eed06dd6bc88410a4ff7f77b6d22f3ce13dbde",
-                "reference": "30eed06dd6bc88410a4ff7f77b6d22f3ce13dbde",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/bb2d123231c095735130cc8f6d31385a44c7b308",
+                "reference": "bb2d123231c095735130cc8f6d31385a44c7b308",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": "^5.3.3|^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.6"
+                "phpunit/phpunit": "^4.6",
+                "sebastian/version": "^1.0.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -4090,7 +4091,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2015-08-24 13:29:44"
+            "time": "2016-08-09 15:02:57"
         }
     ],
     "aliases": [],
