@@ -9,10 +9,8 @@ use Project\Routes;
 /**
  * @ORM\Entity()
  */
-class Article extends Entities\Entity
+class Article extends Entities\UuidBinaryEntity
 {
-
-	use Entities\Attributes\Id;
 
 	/**
 	 * @ORM\Column(type="string")

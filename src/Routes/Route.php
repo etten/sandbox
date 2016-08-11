@@ -8,10 +8,8 @@ use Etten\Doctrine\Entities;
 /**
  * @ORM\Entity()
  */
-class Route extends Entities\Entity
+class Route extends Entities\UuidBinaryEntity
 {
-
-	use Entities\Attributes\Id;
 
 	/**
 	 * @var string
@@ -45,6 +43,7 @@ class Route extends Entities\Entity
 
 	public function __construct(string $type)
 	{
+		$this->generateId();
 		$this->type = $type;
 	}
 

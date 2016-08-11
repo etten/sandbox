@@ -9,10 +9,8 @@ use Nette\Security;
 /**
  * @ORM\Entity()
  */
-class User extends Entities\Entity implements Security\IIdentity
+class User extends Entities\UuidBinaryEntity implements Security\IIdentity
 {
-
-	use Entities\Attributes\Id;
 
 	/**
 	 * @var string
@@ -28,6 +26,7 @@ class User extends Entities\Entity implements Security\IIdentity
 
 	public function __construct(string $username, string $password)
 	{
+		$this->generateId();
 		$this->setUsername($username);
 		$this->setPassword($password);
 	}
