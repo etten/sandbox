@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "654d6e959e4d90be13d4ac6d141e2d9c",
-    "content-hash": "61ab568c539317e7f939940e67ca8b85",
+    "hash": "e09a875cd863617ff5e1671b57de37a4",
+    "content-hash": "46dee739e17d63cde9748120341e2f46",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -710,16 +710,16 @@
         },
         {
             "name": "etten/doctrine",
-            "version": "v4.1.0",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/doctrine.git",
-                "reference": "d246160ddefc782a046a8e8d74ecc70221a68b35"
+                "reference": "ace4ee31d50b260757c840f85b01673a1f82a487"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/doctrine/zipball/d246160ddefc782a046a8e8d74ecc70221a68b35",
-                "reference": "d246160ddefc782a046a8e8d74ecc70221a68b35",
+                "url": "https://api.github.com/repos/etten/doctrine/zipball/ace4ee31d50b260757c840f85b01673a1f82a487",
+                "reference": "ace4ee31d50b260757c840f85b01673a1f82a487",
                 "shasum": ""
             },
             "require": {
@@ -756,7 +756,7 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2016-08-12 11:59:41"
+            "time": "2016-08-13 09:24:22"
         },
         {
             "name": "etten/migrations",
@@ -858,6 +858,47 @@
                 "symfony"
             ],
             "time": "2016-07-18 10:35:45"
+        },
+        {
+            "name": "etten/utils",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/etten/utils.git",
+                "reference": "e724d161c2ab1b4c8dae9973935de064c7806729"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/etten/utils/zipball/e724d161c2ab1b4c8dae9973935de064c7806729",
+                "reference": "e724d161c2ab1b4c8dae9973935de064c7806729",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "etten/codestyle": "^2.0",
+                "phpunit/phpunit": "^5.5",
+                "squizlabs/php_codesniffer": "~2.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Etten\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jaroslav Hranička",
+                    "email": "hranicka@outlook.com"
+                }
+            ],
+            "description": "Etten\\Utils",
+            "time": "2016-08-13 09:12:25"
         },
         {
             "name": "kdyby/annotations",

@@ -30,6 +30,10 @@ session:
 	gc_probability: 1 # default is 1; on some system is turned off
 
 
+services:
+	etten.files: Etten\Utils\Files
+
+
 extensions:
 	kdyby.console: Kdyby\Console\DI\ConsoleExtension
 	kdyby.events: Kdyby\Events\DI\EventsExtension
@@ -48,7 +52,9 @@ kdyby.console:
 
 
 kdyby.annotations:
-	cache: Etten\Doctrine\Caching\Decorators\SQLite3Cache('%tempDir%/cache/doctrine.annotations.s3db')
+	cache: Doctrine\Common\Cache\SQLite3Cache(
+		SQLite3(@etten.files::createFile('%tempDir%/cache/doctrine.annotations.s3db')), 'annotations'
+	)
 
 
 kdyby.doctrine:
@@ -60,10 +66,12 @@ kdyby.doctrine:
 	metadata:
 		Project: %srcDir%
 
-	metadataCache: Etten\Doctrine\Caching\Decorators\SQLite3Cache('%tempDir%/cache/doctrine.metadata.s3db')
-	queryCache: Etten\Doctrine\Caching\Decorators\SQLite3Cache('%tempDir%/cache/doctrine.query.s3db')
-	resultCache: Etten\Doctrine\Caching\Decorators\SQLite3Cache('%tempDir%/cache/doctrine.result.s3db')
-	hydrationCache: Etten\Doctrine\Caching\Decorators\SQLite3Cache('%tempDir%/cache/doctrine.hydratation.s3db')
+	metadataCache: Doctrine\Common\Cache\SQLite3Cache(
+		SQLite3(@etten.files::createFile('%tempDir%/cache/doctrine.metadata.s3db')), 'metadata'
+	)
+	hydrationCache: Doctrine\Common\Cache\SQLite3Cache(
+		SQLite3(@etten.files::createFile('%tempDir%/cache/doctrine.hydratation.s3db')), 'hydratation'
+	)
 
 
 etten.migrations:
