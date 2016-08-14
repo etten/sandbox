@@ -72,6 +72,9 @@ kdyby.doctrine:
 	hydrationCache: Doctrine\Common\Cache\SQLite3Cache(
 		SQLite3(@etten.files::createFile('%tempDir%/cache/doctrine.hydratation.s3db')), 'hydratation'
 	)
+	resultCache: Doctrine\Common\Cache\SQLite3Cache(
+		SQLite3(@etten.files::createFile('%tempDir%/cache/doctrine.result.s3db')), 'result'
+	)
 
 
 etten.migrations:
