@@ -48,13 +48,13 @@ module.exports = function (grunt) {
 		watch: {
 			less: {
 				files: [
-					'www/**/*.less'
+					'web/**/*.less'
 				],
 				tasks: ['less:development']
 			},
 			ts: {
 				files: [
-					'www/**/*.ts'
+					'web/**/*.ts'
 				],
 				tasks: ['ts:development']
 			}
