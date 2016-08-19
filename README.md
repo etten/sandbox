@@ -38,13 +38,13 @@ grunt watch
 
 This can be done automatically by IDE - WebStorm, PHPStorm, [see guide](https://www.jetbrains.com/help/webstorm/2016.2/using-grunt-task-runner.html#d264440e523).
 
-Create/update database schema.
+Create/update database schema:
 
 ```bash
 php web/index.php orm:schema-tool:update
 ```
 
-Create a User (username and password).
+Create a User (username and password):
 
 ```bash
 php web/index.php user:create
