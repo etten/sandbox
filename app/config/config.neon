@@ -122,13 +122,16 @@ etten.deployment:
 			# IDE
 			- '/.idea'
 
+			# NodeJS
+			- 'node_modules'
+			- '.tscache'
+
 			# Common files
 			- '*.log'
 			- 'test*'
 			- 'sample*'
 			- 'example*'
 			- 'demo*'
-			- 'node_modules'
 
 			# Etten App
 			- '/log/*'

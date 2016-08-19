@@ -24,6 +24,10 @@ install:
   # Bower
   - bower install --allow-root --config.interactive=false
 
+  # NodeJS
+  - npm install
+  - grunt production
+
 before_script:
   # Prepare Shippable directories
   - mkdir -p shippable/codecoverage

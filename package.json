@@ -1,0 +1,16 @@
+{
+  "name": "etten-sandbox",
+  "version": "1.0.0",
+  "description": "Etten/Sandbox Application.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:etten/sandbox.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.0",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ts": "^5.5.1"
+  }
+}

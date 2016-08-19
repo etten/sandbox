@@ -120,6 +120,16 @@ echo "----------------\n";
 passthru('bower update');
 echo "Done.\n";
 
+echo "Running npm install...\n";
+echo "-------------------\n";
+passthru('npm install');
+echo "Done.\n";
+
+echo "Running Grunt tasks...\n";
+echo "-------------------\n";
+passthru('grunt development');
+echo "Done.\n";
+
 echo "\n";
 echo "Running migrations...\n";
 echo "---------------------\n";

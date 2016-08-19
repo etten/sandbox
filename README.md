@@ -14,22 +14,32 @@ on security and performance and is definitely one of the safest PHP frameworks.
 * [PHP 7.0+](https://secure.php.net/)
 * [Composer installed](https://getcomposer.org/)
 * [Apache HTTP Server](https://httpd.apache.org/), [mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) enabled
+* [NodeJS + NPM](https://nodejs.org/en/)
+* [Bower](http://bower.io/)
+* [Grunt](http://gruntjs.com/)
 
 ## Installing
 
 The best way to install Sandbox is using [Composer](https://getcomposer.org/doc/00-intro.md).
+
 When you have Composer installed, run these commands and follow instructions:
 
 ```bash
-$ composer create-project etten/sandbox my-app
-$ cd my-app
-$ php install.php
+composer create-project etten/sandbox my-app
+cd my-app
+php install.php
 ```
 
-Create database schema.
+Run `grunt-contrib-watch` tasks (for automatic LESS, TypeScript compiling):
 
 ```bash
-php web/index.php orm:schema-tool:create
+grunt watch
+```
+
+Create/update database schema.
+
+```bash
+php web/index.php orm:schema-tool:update
 ```
 
 Create a User (username and password).

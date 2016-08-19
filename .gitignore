@@ -1,2 +1,7 @@
 /vendor
+/node_modules
+/.tscache
 *.local.neon
+*.log
+*.css.map
+*.js.map
