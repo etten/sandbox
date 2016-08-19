@@ -36,6 +36,8 @@ Run `grunt-contrib-watch` tasks (for automatic LESS, TypeScript compiling):
 grunt watch
 ```
 
+This can be done automatically by IDE - WebStorm, PHPStorm, [see guide](https://www.jetbrains.com/help/webstorm/2016.2/using-grunt-task-runner.html#d264440e523).
+
 Create/update database schema.
 
 ```bash
