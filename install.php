@@ -94,17 +94,6 @@ if (!is_file('app/config/config.local.neon')) {
 
 echo "Done.\n";
 
-echo "Running Composer...\n";
-echo "-------------------\n";
-passthru('composer update');
-echo "Done.\n";
-
-echo "\n";
-echo "Running Bower...\n";
-echo "----------------\n";
-passthru('bower update');
-echo "Done.\n";
-
 if (php_uname('s') === 'Linux') {
 	echo "\n";
 	echo "----------------------\n";
@@ -119,6 +108,23 @@ if (php_uname('s') === 'Linux') {
 
 	echo "Done.\n";
 }
+
+echo "Running Composer...\n";
+echo "-------------------\n";
+passthru('composer update');
+echo "Done.\n";
+
+echo "\n";
+echo "Running Bower...\n";
+echo "----------------\n";
+passthru('bower update');
+echo "Done.\n";
+
+echo "\n";
+echo "Running migrations...\n";
+echo "---------------------\n";
+passthru('php ' . escapeshellarg(__DIR__ . '/www/index.php') . ' migrations:continue');
+echo "Done.\n";
 
 echo "\n";
 echo "Installation completed.\n";
