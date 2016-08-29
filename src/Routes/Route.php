@@ -7,6 +7,12 @@ use Etten\Doctrine\Entities;
 
 /**
  * @ORM\Entity()
+ * @ORM\Table(
+ *     name="route",
+ *     indexes={
+ *     @ORM\Index(columns={"type"})
+ *     }
+ * )
  */
 class Route extends Entities\UuidBinaryEntity
 {
