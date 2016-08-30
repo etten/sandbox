@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=7.0",
-        "etten/app": "^2.6",
+        "etten/app": "^2.7",
         "etten/utils": "^0.1",
         "etten/deployment": "^3.1",
         "etten/migrations": "^3.1",
