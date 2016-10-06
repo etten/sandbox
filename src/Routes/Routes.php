@@ -19,7 +19,7 @@ class Routes extends Facade
 	public function findOneByUrl(string $url)
 	{
 		return $this->getRepository(Route::class)
-			->findOneBy(['url' => $url]);
+			->findOneBy(['urlHash' => RouteHelpers::hash($url)]);
 	}
 
 }
