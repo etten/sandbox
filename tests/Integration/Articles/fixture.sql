@@ -1,6 +1,8 @@
 CREATE TABLE IF NOT EXISTS `route` (
 	`id` BINARY(16) NOT NULL COMMENT '(DC2Type:uuid_binary)',
-	`url` VARCHAR(255)
+	`url` LONGTEXT
+	COLLATE utf8_unicode_ci NOT NULL,
+	`url_hash` VARCHAR(32)
 	COLLATE utf8_unicode_ci NOT NULL,
 	`type` VARCHAR(255)
 	COLLATE utf8_unicode_ci NOT NULL,
@@ -8,10 +10,10 @@ CREATE TABLE IF NOT EXISTS `route` (
 	COLLATE utf8_unicode_ci NOT NULL,
 	`keywords` VARCHAR(255)
 	COLLATE utf8_unicode_ci NOT NULL,
-	`description` VARCHAR(255)
+	`description` LONGTEXT
 	COLLATE utf8_unicode_ci NOT NULL,
 	PRIMARY KEY (`id`),
-	UNIQUE KEY `UNIQ_2C42079F47645AE` (`url`)
+	UNIQUE KEY `UNIQ_2C42079CFECAB00` (`url_hash`)
 )
 	ENGINE = InnoDB
 	DEFAULT CHARSET = utf8
