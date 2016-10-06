@@ -30,4 +30,9 @@ class RouteHelpers
 		return self::$transliterator->transliterate($s);
 	}
 
+	public static function hash(string $s): string
+	{
+		return md5($s);
+	}
+
 }

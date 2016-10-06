@@ -19,9 +19,15 @@ class Route extends Entities\UuidBinaryEntity
 
 	/**
 	 * @var string
-	 * @ORM\Column(type="string", unique=true)
+	 * @ORM\Column(type="string")
 	 */
 	private $url;
+
+	/**
+	 * @var string
+	 * @ORM\Column(type="string", length=32, unique=true)
+	 */
+	private $urlHash;
 
 	/**
 	 * @var string
@@ -63,9 +69,15 @@ class Route extends Entities\UuidBinaryEntity
 		return $this->url;
 	}
 
+	public function getUrlHash(): string
+	{
+		return $this->urlHash;
+	}
+
 	public function setUrl(string $url)
 	{
 		$this->url = RouteHelpers::webalize($url, '/.');
+		$this->urlHash = RouteHelpers::hash($this->url);
 	}
 
 	public function getType(): string
