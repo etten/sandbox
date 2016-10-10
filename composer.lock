@@ -710,16 +710,16 @@
         },
         {
             "name": "etten/doctrine",
-            "version": "v4.6.0",
+            "version": "v4.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/doctrine.git",
-                "reference": "e51fc5e65d564b327d476b40932b7bf77afccdfc"
+                "reference": "a87dd4034073f09c9beb2ad7ceda76ee218c8dfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/doctrine/zipball/e51fc5e65d564b327d476b40932b7bf77afccdfc",
-                "reference": "e51fc5e65d564b327d476b40932b7bf77afccdfc",
+                "url": "https://api.github.com/repos/etten/doctrine/zipball/a87dd4034073f09c9beb2ad7ceda76ee218c8dfa",
+                "reference": "a87dd4034073f09c9beb2ad7ceda76ee218c8dfa",
                 "shasum": ""
             },
             "require": {
@@ -758,7 +758,7 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2016-10-10 08:31:02"
+            "time": "2016-10-10 19:12:11"
         },
         {
             "name": "etten/migrations",
@@ -2407,16 +2407,16 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "5277094ed527a1c4477177d102fe4c53551953e0"
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/5277094ed527a1c4477177d102fe4c53551953e0",
-                "reference": "5277094ed527a1c4477177d102fe4c53551953e0",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
                 "shasum": ""
             },
             "require": {
@@ -2450,7 +2450,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-09-19 16:02:08"
+            "time": "2016-10-10 12:19:37"
         },
         {
             "name": "ramsey/uuid",
