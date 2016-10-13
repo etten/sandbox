@@ -710,16 +710,16 @@
         },
         {
             "name": "etten/doctrine",
-            "version": "v4.6.1",
+            "version": "v4.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/etten/doctrine.git",
-                "reference": "a87dd4034073f09c9beb2ad7ceda76ee218c8dfa"
+                "reference": "1ce87c605a03f7f75f21ccc6f9fd892e3cf2961d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/etten/doctrine/zipball/a87dd4034073f09c9beb2ad7ceda76ee218c8dfa",
-                "reference": "a87dd4034073f09c9beb2ad7ceda76ee218c8dfa",
+                "url": "https://api.github.com/repos/etten/doctrine/zipball/1ce87c605a03f7f75f21ccc6f9fd892e3cf2961d",
+                "reference": "1ce87c605a03f7f75f21ccc6f9fd892e3cf2961d",
                 "shasum": ""
             },
             "require": {
@@ -758,7 +758,7 @@
                 "kdyby",
                 "nette"
             ],
-            "time": "2016-10-10 19:12:11"
+            "time": "2016-10-13 08:05:38"
         },
         {
             "name": "etten/migrations",
