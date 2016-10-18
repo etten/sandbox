@@ -7,7 +7,12 @@ application:
 	scanComposer: no
 
 
+kdyby.annotations:
+	cache: array
+
+
 kdyby.doctrine:
 	user: #<database-user>
 	password: #<database-password>
 	dbname: #<database-name>
+	cache: array
