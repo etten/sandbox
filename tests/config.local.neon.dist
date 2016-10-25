@@ -1,7 +1,0 @@
-parameters:
-
-
-kdyby.doctrine:
-	user: #<database-user>
-	password: #<database-password>
-	dbname: #<database-test-name>
